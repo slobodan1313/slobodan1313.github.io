@@ -1,23 +1,404 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Slobodan Milosavljević – Portfolio</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADI PunchOut + PO Flow - Business Overview</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 40px 20px;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #1e3a5f 0%, #2d5a8c 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+
+        .content {
+            padding: 40px;
+        }
+
+        .intro {
+            background: #f8f9fa;
+            border-left: 5px solid #ff6b35;
+            padding: 20px 30px;
+            margin-bottom: 40px;
+            border-radius: 8px;
+        }
+
+        .intro h2 {
+            color: #1e3a5f;
+            margin-bottom: 10px;
+        }
+
+        .phase {
+            margin-bottom: 50px;
+            border: 2px solid #e0e0e0;
+            border-radius: 12px;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .phase:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .phase-header {
+            padding: 20px 30px;
+            font-size: 1.5em;
+            font-weight: 600;
+            color: white;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .phase-1 .phase-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+
+        .phase-2 .phase-header {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+        }
+
+        .phase-3 .phase-header {
+            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+        }
+
+        .phase-number {
+            background: rgba(255,255,255,0.3);
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.3em;
+            font-weight: 700;
+        }
+
+        .phase-body {
+            padding: 30px;
+            background: white;
+        }
+
+        .flow-step {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        .flow-step:last-child {
+            margin-bottom: 0;
+        }
+
+        .flow-step:not(:last-child)::after {
+            content: '↓';
+            position: absolute;
+            left: 35px;
+            bottom: -15px;
+            font-size: 24px;
+            color: #ff6b35;
+            font-weight: bold;
+        }
+
+        .system-box {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 15px 25px;
+            border-radius: 8px;
+            font-weight: 600;
+            min-width: 200px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+        }
+
+        .action-box {
+            background: #f8f9fa;
+            border: 2px dashed #667eea;
+            color: #1e3a5f;
+            padding: 12px 20px;
+            border-radius: 8px;
+            margin-left: 20px;
+            flex: 1;
+            font-size: 0.95em;
+        }
+
+        .highlight {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 15px 20px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+
+        .highlight strong {
+            color: #856404;
+        }
+
+        .key-point {
+            background: #e8f5e9;
+            border-left: 4px solid #4caf50;
+            padding: 15px 20px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+
+        .key-point strong {
+            color: #2e7d32;
+        }
+
+        .architecture-note {
+            background: #e3f2fd;
+            border: 2px solid #2196f3;
+            padding: 20px 25px;
+            margin-top: 40px;
+            border-radius: 8px;
+        }
+
+        .architecture-note h3 {
+            color: #1565c0;
+            margin-bottom: 15px;
+            font-size: 1.3em;
+        }
+
+        .architecture-note ul {
+            margin-left: 20px;
+        }
+
+        .architecture-note li {
+            margin-bottom: 8px;
+            color: #0d47a1;
+        }
+
+        .footer {
+            background: #f8f9fa;
+            padding: 30px;
+            text-align: center;
+            border-top: 3px solid #ff6b35;
+        }
+
+        .footer p {
+            color: #666;
+            font-size: 0.9em;
+        }
+
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+            
+            .container {
+                box-shadow: none;
+            }
+            
+            .phase {
+                page-break-inside: avoid;
+            }
+        }
+    </style>
 </head>
 <body>
-  <h1>Slobodan Milosavljević</h1>
-  <p>Senior Business Analyst / Product Owner</p>
+    <div class="container">
+        <div class="header">
+            <h1>ADI PunchOut + Purchase Order Flow</h1>
+            <p>Complete Business Process Overview</p>
+        </div>
 
-  <h2>Case Studies</h2>
-  <ul>
-    <li>PunchOut eProcurement – ADI Global</li>
-    <li>E-commerce & Platform Integrations</li>
-    <li>Digital Transformation & ERP</li>
-  </ul>
+        <div class="content">
+            <div class="intro">
+                <h2>What is PunchOut?</h2>
+                <p>PunchOut is an ecosystem that enables ADI Global buyers to access their predefined catalogs for e-shopping. When the buyer decides to purchase, the cart seamlessly returns to the buyer's procurement system for approval. After approval, the Purchase Order is stored in both the buyer's ERP and ADI's P21 ERP, then flows through our systems to create Sales Orders in P21 for fulfillment.</p>
+            </div>
 
-  <p>
-    <a href="https://www.linkedin.com/">LinkedIn</a>
-  </p>
+            <!-- Phase 1 -->
+            <div class="phase phase-1">
+                <div class="phase-header">
+                    <div class="phase-number">1</div>
+                    <div>PunchOut Session (Shopping)</div>
+                </div>
+                <div class="phase-body">
+                    <div class="flow-step">
+                        <div class="system-box">GEP</div>
+                        <div class="action-box">User clicks "Shop ADI Catalog" button</div>
+                    </div>
+                    
+                    <div class="flow-step">
+                        <div class="system-box">GEP → Greenwing</div>
+                        <div class="action-box">Sends PunchOut Setup Request (cXML format)</div>
+                    </div>
+                    
+                    <div class="flow-step">
+                        <div class="system-box">Greenwing</div>
+                        <div class="action-box">Processes request and returns BigCommerce catalog URL</div>
+                    </div>
+                    
+                    <div class="flow-step">
+                        <div class="system-box">BigCommerce</div>
+                        <div class="action-box">User browses catalog, adds items to cart</div>
+                    </div>
+
+                    <div class="key-point">
+                        <strong>User Experience:</strong> Buyer sees cart items in their procurement system (e.g., GEP), can review and approve. Once approved, the Purchase Order is created and stored in the buyer's ERP system.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Phase 2 -->
+            <div class="phase phase-2">
+                <div class="phase-header">
+                    <div class="phase-number">2</div>
+                    <div>Cart Return (Transfer to GEP)</div>
+                </div>
+                <div class="phase-body">
+                    <div class="flow-step">
+                        <div class="system-box">BigCommerce</div>
+                        <div class="action-box">User clicks <strong>'Transfer Cart'</strong> button</div>
+                    </div>
+                    
+                    <div class="flow-step">
+                        <div class="system-box">BigCommerce → Greenwing</div>
+                        <div class="action-box">Cart data sent to Greenwing middleware</div>
+                    </div>
+                    
+                    <div class="flow-step">
+                        <div class="system-box">Greenwing</div>
+                        <div class="action-box">Creates cXML PunchOut Order Message</div>
+                    </div>
+                    
+                    <div class="flow-step">
+                        <div class="system-box">Greenwing → GEP</div>
+                        <div class="action-box">Sends cart back to GEP procurement system</div>
+                    </div>
+                    
+                    <div class="flow-step">
+                        <div class="system-box">GEP</div>
+                        <div class="action-box">User sees cart items, can review and approve</div>
+                    </div>
+
+                    <div class="highlight">
+                        <strong>Critical Point:</strong> This is where cart return functionality was blocked as of January 15, 2026. Digital Silk completed payload updates to resolve this.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Phase 3 -->
+            <div class="phase phase-3">
+                <div class="phase-header">
+                    <div class="phase-number">3</div>
+                    <div>PO Submission & Order Processing</div>
+                </div>
+                <div class="phase-body">
+                    <div class="flow-step">
+                        <div class="system-box">GEP</div>
+                        <div class="action-box">User approves cart, GEP creates Purchase Order</div>
+                    </div>
+                    
+                    <div class="flow-step">
+                        <div class="system-box">GEP → Greenwing</div>
+                        <div class="action-box">Sends cXML Purchase Order</div>
+                    </div>
+                    
+                    <div class="flow-step">
+                        <div class="system-box">Greenwing (Gateway)</div>
+                        <div class="action-box">Receives and forwards PO - <strong>NO transformation</strong></div>
+                    </div>
+                    
+                    <div class="flow-step">
+                        <div class="system-box">Boomi (Integration)</div>
+                        <div class="action-box">Transforms cXML → P21 format (UOM mapping, identifier mapping)</div>
+                    </div>
+                    
+                    <div class="flow-step">
+                        <div class="system-box">P21 Staging Area</div>
+                        <div class="action-box">Validates PO data (customer number, pricing, inventory)</div>
+                    </div>
+                    
+                    <div class="flow-step">
+                        <div class="system-box">P21 ERP</div>
+                        <div class="action-box">Creates Sales Order and processes for fulfillment</div>
+                    </div>
+                    
+                    <div class="flow-step">
+                        <div class="system-box">P21 → GEP</div>
+                        <div class="action-box">Asynchronous confirmation sent back (order accepted/rejected)</div>
+                    </div>
+
+                    <div class="highlight">
+                        <strong>81-Day Bottleneck:</strong> This PO integration between Greenwing and P21 has been the critical path blocker since October 2024. Jason Capshaw (ERP architect) returns February 5 to continue work.
+                    </div>
+
+                    <div class="key-point">
+                        <strong>Dual ERP Storage:</strong> The Purchase Order is stored in both the buyer's ERP (e.g., Oracle, SAP) and ADI's P21 ERP as a Sales Order. The PO Acknowledgment sent back to the buyer confirms receipt and links the buyer's PO number to ADI's Sales Order number for traceability.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Architecture Notes -->
+            <div class="architecture-note">
+                <h3>🔧 Technical Architecture - Key Points</h3>
+                <ul>
+                    <li><strong>Greenwing Role:</strong> Gateway only - receives cXML and forwards it. Per SOW: "no translation will occur at present"</li>
+                    <li><strong>Boomi Role:</strong> Integration middleware - performs all data transformation from cXML to P21 format</li>
+                    <li><strong>Data Mapping:</strong> UOM codes, customer identifiers, contact IDs all mapped in Boomi</li>
+                    <li><strong>P21 Staging:</strong> Validation layer before order creation - checks inventory, pricing, customer eligibility</li>
+                    <li><strong>Asynchronous Processing:</strong> Order confirmation returns after P21 validates (not real-time)</li>
+                    <li><strong>Security:</strong> React2Shell security issue resolved, new Azure hosting environment created</li>
+                </ul>
+            </div>
+
+            <div class="architecture-note">
+                <h3>📊 Current Project Status (as of January 2026)</h3>
+                <ul>
+                    <li><strong>Target MVP:</strong> First week of February 2026 (Feb 5 compliance deadline)</li>
+                    <li><strong>Front-End:</strong> Very close to completion (Digital Silk)</li>
+                    <li><strong>Pricing Integration:</strong> Close to completion (PROS)</li>
+                    <li><strong>Inventory Integration:</strong> In progress</li>
+                    <li><strong>Cart Return:</strong> Resolved January 15, 2026 (Digital Silk payload updates)</li>
+                    <li><strong>PO Integration:</strong> Critical blocker - Jason returns February 5</li>
+                    <li><strong>Testing Delay:</strong> ~2 weeks behind on full end-to-end ERP-connected testing</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p><strong>ADI Global Distribution</strong> | PunchOut MVP Project | APi Group Integration</p>
+            <p>Document Date: January 2026 | Prepared by: Slobodan Milosavljevic</p>
+        </div>
+    </div>
 </body>
 </html>
