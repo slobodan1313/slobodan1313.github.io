@@ -2,11 +2,11 @@
 @font-face{font-family:'Antipasto';src:url(../fonts/AntipastoPro-Bold.woff2) format("woff2");font-weight:700;font-style:normal;font-display:swap}
 @font-face{font-family:'Antipasto';src:url(../fonts/AntipastoPro-Thin.woff2) format("woff2");font-weight:100;font-style:normal;font-display:swap}
 body{font-family:'Antipasto',sans-serif;background-color:#f5f5f5}
-.masthead{position:relative;width:100%;height:100vh;min-height:600px;background:linear-gradient(to bottom,#0000004d 0%,#00000080 75%,#000 100%),url(../images/main/planina-rtanj.png);background-position:center;background-repeat:no-repeat;background-attachment:scroll;background-size:cover}
-.masthead nav{position:fixed;top:0;left:0;right:0;z-index:1000;padding:1.5rem 3rem;background:#0000004d;backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);transition:all .3s ease}
-.masthead nav.scrolled{background:#000c;padding:1rem 3rem;box-shadow:0 2px 10px #0000004d}
+.masthead{position:relative;width:100%;height:100vh;min-height:600px;background:linear-gradient(to bottom,rgba(0,0,0,0.3) 0%,rgba(0,0,0,0.5) 75%,#000 100%),url(../images/main/planina-rtanj.webp);background-position:center;background-repeat:no-repeat;background-attachment:scroll;background-size:cover}
+.masthead nav{position:fixed;top:0;left:0;right:0;z-index:1000;padding:1.5rem 3rem;background:rgba(0,0,0,0.3);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);transition:all .3s ease}
+.masthead nav.scrolled{background:rgba(0,0,0,0.8);padding:1rem 3rem;box-shadow:0 2px 10px rgba(0,0,0,0.3)}
 .masthead h1{font-family:'Antipasto',serif;font-size:3.5rem;line-height:3.5rem;letter-spacing:.8rem;color:#fff;font-weight:700}
-.masthead h2{font-family:'Antipasto',sans-serif;font-size:1.5rem;color:#fffc;font-weight:300;max-width:50rem}
+.masthead h2{font-family:'Antipasto',sans-serif;font-size:1.5rem;color:rgba(255,255,255,0.8);font-weight:300;max-width:50rem}
 @media (min-width: 768px) {
 .masthead h1{font-size:4.5rem;line-height:4.5rem}
 }
@@ -17,26 +17,26 @@ body{font-family:'Antipasto',sans-serif;background-color:#f5f5f5}
 }
 .display-font{font-family:'Antipasto',serif;font-weight:700}
 .case-study-card{transition:all .4s ease;border-left:5px solid transparent}
-.case-study-card:hover{border-left-color:#f97316;transform:translateX(8px);box-shadow:-4px 8px 24px #0000001f}
+.case-study-card:hover{border-left-color:#f97316;transform:translateX(8px);box-shadow:-4px 8px 24px rgba(0,0,0,0.12)}
 .metric-counter{font-variant-numeric:tabular-nums}
 .section-number{font-size:120px;font-weight:800;opacity:.05;position:absolute;top:-20px;left:20px;line-height:1}
 .challenge-tag{background:linear-gradient(135deg,#fee2e2 0%,#fecaca 100%);color:#991b1b}
 .solution-tag{background:linear-gradient(135deg,#dbeafe 0%,#bfdbfe 100%);color:#1e40af}
 .result-tag{background:linear-gradient(135deg,#d1fae5 0%,#a7f3d0 100%);color:#065f46}
 .timeline-line{position:absolute;left:23px;top:40px;bottom:-40px;width:2px;background:linear-gradient(180deg,#f97316 0%,#e5e7eb 100%)}
-.timeline-dot{width:16px;height:16px;background:#fff;border:4px solid #f97316;box-shadow:0 0 0 4px #f973161a}
+.timeline-dot{width:16px;height:16px;background:#fff;border:4px solid #f97316;box-shadow:0 0 0 4px rgba(249,115,22,0.1)}
 .methodology-badge{background:linear-gradient(135deg,#1e3a5f 0%,#2d5986 100%)}
 .highlight-text{background:linear-gradient(120deg,#dbeafe 0%,#93c5fd 100%);color:#0c4a6e;padding:.125rem .375rem;border-radius:4px;font-weight:600}
 .highlight-box{background:linear-gradient(135deg,#d4fc79 0%,#96e6a1 100%);border-radius:12px;padding:24px;margin:20px 0}
 .highlight-box-text{color:#1a1a1a;line-height:1.8}
-.philosophy-box{position:relative;border-radius:80px 16px;overflow:hidden;margin:5px 0 20px;padding:2.5rem;background:linear-gradient(135deg,#f0fdf4 0%,#d1fae5 50%,#a7f3d0 100%);border:2px solid #86efac;box-shadow:0 10px 15px -3px #0000001a 0 4px 6px -2px #0000000d}
+.philosophy-box{position:relative;border-radius:80px 16px;overflow:hidden;margin:5px 0 20px;padding:2.5rem;background:linear-gradient(135deg,#f0fdf4 0%,#d1fae5 50%,#a7f3d0 100%);border:2px solid #86efac;box-shadow:0 10px 15px -3px rgba(0,0,0,0.1),0 4px 6px -2px rgba(0,0,0,0.05)}
 .philosophy-icon{font-size:1.5rem;margin-right:.5rem}
 .intro-buttons-wrapper{display:flex;align-items:center;gap:1rem;margin-bottom:1.5rem}
-.btn-ways-connect{padding:.75rem 2rem;background-color:#f97316;color:#fff;border-radius:9999px;font-weight:600;font-size:.875rem;transition:all .3s ease;border:none;cursor:pointer;box-shadow:0 4px 6px -1px #f973164d}
-.btn-ways-connect:hover{background-color:#ea580c;transform:translateY(-2px);box-shadow:0 6px 8px -1px #f9731666}
+.btn-ways-connect{padding:.75rem 2rem;background-color:#f97316;color:#fff;border-radius:9999px;font-weight:600;font-size:.875rem;transition:all .3s ease;border:none;cursor:pointer;box-shadow:0 4px 6px -1px rgba(249,115,22,0.3)}
+.btn-ways-connect:hover{background-color:#ea580c;transform:translateY(-2px);box-shadow:0 6px 8px -1px rgba(249,115,22,0.4)}
 .btn-go-on{padding:.75rem 2rem;background-color:transparent;color:#6b7280;border:2px solid #d1d5db;border-radius:9999px;font-weight:600;font-size:.875rem;transition:all .3s ease;cursor:pointer}
-.btn-go-on:hover{border-color:#9ca3af;color:#374151;background-color:#f973160d}
-.status-badge{display:inline-flex;align-items:center;gap:.5rem;background-color:#fff;padding:.75rem 1.5rem;border-radius:9999px;font-weight:600;font-size:.875rem;box-shadow:0 4px 6px -1px #0000001a 0 2px 4px -1px #0000000f;color:#1f2937}
+.btn-go-on:hover{border-color:#9ca3af;color:#374151;background-color:rgba(249,115,22,0.05)}
+.status-badge{display:inline-flex;align-items:center;gap:.5rem;background-color:#fff;padding:.75rem 1.5rem;border-radius:9999px;font-weight:600;font-size:.875rem;box-shadow:0 4px 6px -1px rgba(0,0,0,0.1),0 2px 4px -1px rgba(0,0,0,0.06);color:#1f2937}
 .status-badge-dot{width:.75rem;height:.75rem;background-color:#10b981;border-radius:9999px;animation:pulse 2s cubic-bezier(0.4,0,0.6,1) infinite}
 @keyframes pulse {
 0%,100%{opacity:1}
@@ -55,3 +55,76 @@ body{font-family:'Antipasto',sans-serif;background-color:#f5f5f5}
 60%{transform:translateY(-5px)}
 }
 .bounce-animation{animation:bounce 2s infinite}
+.hamburger-menu{display:none;flex-direction:column;justify-content:space-around;width:2rem;height:2rem;background:transparent;border:none;cursor:pointer;padding:0;z-index:1001}
+.hamburger-menu span{width:2rem;height:.2rem;background:#fff;border-radius:10px;transition:all .3s linear;position:relative;transform-origin:1px}
+.hamburger-menu.active span:nth-child(1){transform:rotate(45deg)}
+.hamburger-menu.active span:nth-child(2){opacity:0;transform:translateX(20px)}
+.hamburger-menu.active span:nth-child(3){transform:rotate(-45deg)}
+body.menu-open{overflow:hidden}
+@media (max-width: 480px) {
+.hamburger-menu{display:flex}
+.masthead nav{padding:1rem 1.5rem;flex-direction:row;justify-content:space-between;align-items:center}
+.nav-menu{position:fixed;right:-100%;top:0;width:70%;height:100vh;background:rgba(0,0,0,0.95);backdrop-filter:blur(10px);display:flex;flex-direction:column;justify-content:center;align-items:center;gap:2rem;transition:right .3s ease-in-out;z-index:1000;padding:2rem}
+.nav-menu.active{right:0}
+.nav-menu a{font-size:1.25rem;padding:.5rem 1rem;width:100%;text-align:center;border-bottom:1px solid rgba(255,255,255,0.1)}
+.nav-menu a:hover{background:rgba(249,115,22,0.1)}
+.masthead h1,.hero-title{font-size:2rem!important;line-height:2.2rem!important;letter-spacing:.2rem!important;padding:0 1rem}
+.masthead h2,.hero-subtitle{font-size:1rem!important;padding:0 1rem}
+.hero-buttons{display:flex;flex-direction:column;gap:1rem;padding:0 1rem}
+.btn-primary-custom,.btn-outline-custom{width:100%;margin-right:0;padding:.875rem 1.5rem}
+.social-link{font-size:1.5rem;margin:0 .5rem}
+.mountain-info p{font-size:.75rem!important}
+.masthead-container{padding-top:140px}
+.masthead::after{height:40px}
+.intro-buttons-wrapper{flex-direction:column;width:100%}
+.btn-ways-connect,.btn-go-on{width:100%}
+.status-badge{font-size:.75rem;padding:.5rem 1rem}
+.philosophy-box{padding:1.5rem;margin:5px 0 15px;border-radius:40px 12px}
+.philosophy-box p{font-size:.875rem!important}
+.philosophy-icon{font-size:1.25rem}
+h2{font-size:2rem!important}
+h3{font-size:1.5rem!important}
+.text-2xl{font-size:1.125rem!important}
+.text-xl{font-size:1rem!important}
+.text-lg{font-size:.9375rem!important}
+.grid-cols-2{grid-template-columns:1fr!important}
+.bg-white.rounded-2xl,.bg-white.rounded-3xl{padding:1.5rem!important}
+.case-study-card{padding:1.5rem!important}
+.scroll-indicator{bottom:20px}
+.scroll-indicator i{font-size:1.5rem}
+}
+@media (min-width: 481px) and (max-width: 767px) {
+.hamburger-menu{display:flex}
+.masthead nav{padding:1rem 2rem;flex-direction:row;justify-content:space-between;align-items:center}
+.nav-menu{position:fixed;right:-100%;top:0;width:60%;height:100vh;background:rgba(0,0,0,0.95);backdrop-filter:blur(10px);display:flex;flex-direction:column;justify-content:center;align-items:center;gap:2rem;transition:right .3s ease-in-out;z-index:1000;padding:2rem}
+.nav-menu.active{right:0}
+.nav-menu a{font-size:1.25rem;padding:.5rem 1rem;width:100%;text-align:center;border-bottom:1px solid rgba(255,255,255,0.1)}
+.nav-menu a:hover{background:rgba(249,115,22,0.1)}
+.masthead h1,.hero-title{font-size:2.5rem!important;line-height:2.75rem!important;letter-spacing:.3rem!important}
+.masthead h2,.hero-subtitle{font-size:1.125rem!important}
+.hero-buttons{display:flex;gap:1rem;flex-wrap:wrap;justify-content:center}
+.masthead-container{padding-top:120px}
+.masthead::after{height:50px}
+.grid-cols-2{grid-template-columns:1fr!important}
+.philosophy-box{padding:2rem}
+h2{font-size:2.5rem!important}
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+.masthead h1,.hero-title{font-size:3.5rem!important;line-height:3.75rem!important;letter-spacing:.5rem!important}
+.masthead h2,.hero-subtitle{font-size:1.25rem!important}
+.masthead-container{padding-top:100px}
+.grid-cols-2{gap:2rem!important}
+.bg-white.rounded-2xl,.bg-white.rounded-3xl{padding:2rem!important}
+}
+@media (max-width: 767px) {
+.max-w-7xl,.max-w-4xl{padding-left:1.5rem;padding-right:1.5rem}
+.py-12{padding-top:2rem!important;padding-bottom:2rem!important}
+.py-16{padding-top:3rem!important;padding-bottom:3rem!important}
+.rounded-3xl{border-radius:1.5rem!important}
+.rounded-2xl{border-radius:1rem!important}
+.gap-12{gap:2rem!important}
+.gap-6{gap:1rem!important}
+.mb-12{margin-bottom:2rem!important}
+.mb-16{margin-bottom:2rem!important}
+.text-center{text-align:center}
+}
