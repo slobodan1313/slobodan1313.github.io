@@ -76,7 +76,7 @@ body {
     font-family: 'Antipasto', sans-serif;
     font-size: 1.5rem;
     color: rgba(255, 255, 255, 0.8);
-    font-weight: 300;
+    font-weight: 400;
     max-width: 50rem;
 }
 
@@ -290,7 +290,6 @@ body {
     left: 0;
     width: 100%;
     height: 60px;
-    /*background-image: url('https://static-cse.canva.com/_next/static/assets/wave_w2881xh801_d872655b74d866e818c4b252dda65d3fe6a169dac9e5dc5834236c423c1012b0.png');*/
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -477,8 +476,8 @@ body.menu-open {
     
     .max-w-7xl,
     .max-w-4xl {
-        padding-left: 0.7rem !important;
-        padding-right: 0.7rem !important;
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
     }
     
     /* Wave */
@@ -489,9 +488,9 @@ body.menu-open {
     /* Masthead - Mobile Background */
     .masthead {
         background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.6) 40%, rgba(0, 0, 0, 0.3) 70%, transparent 100%), 
-                    url('../images/main/slobodan-half-profile.jpg');
-        background-position: 65% top;
-        background-size: auto 100%;
+                    url('../images/main/slobodan-half-profile.png');
+        background-position: 65% center;
+        background-size: auto 70%;
         background-repeat: no-repeat;
     }
     
@@ -916,8 +915,8 @@ body.menu-open {
 @media (max-width: 768px) {
     .grid-cols-2 { grid-template-columns: 1fr; }
     .grid-cols-3 { grid-template-columns: 1fr; }
-    .gap-12 { gap: 1rem; }
-    .p-16 { padding: 1rem; }
+    .gap-12 { gap: 2rem; }
+    .p-16 { padding: 2rem; }
 }
 
 /* ============================================
@@ -1019,6 +1018,13 @@ body.menu-open {
     padding: 2.5rem !important;
 }
 
+/* Larger paragraph text in learning cards */
+.what-i-learned-card p {
+    font-size: 1.125rem !important;  /* 18px - larger, readable */
+    line-height: 1.7 !important;
+    font-weight: 400;  /* Regular weight, not bold */
+}
+
 /* Responsive Grid - Stack on Mobile */
 @media (max-width: 768px) {
     /* What I Learned section - stack vertically */
@@ -1030,6 +1036,11 @@ body.menu-open {
     /* Reduce padding on mobile */
     .what-i-learned-card {
         padding: 1.5rem !important;
+    }
+    
+    /* Adjust paragraph font size for mobile */
+    .what-i-learned-card p {
+        font-size: 1rem !important;  /* 16px on mobile */
     }
 }
 
