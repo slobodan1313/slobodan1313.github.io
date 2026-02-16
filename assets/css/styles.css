@@ -1,0 +1,157 @@
+/* Fixed Navigation with Overlay */
+.masthead nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    padding: 1.5rem 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+}
+
+.masthead nav.scrolled {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 1rem 3rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.masthead nav > div {
+    display: flex;
+    gap: 2rem;
+}
+
+.masthead nav a {
+    color: rgba(255, 255, 255, 0.9);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.masthead nav a:hover {
+    color: #f97316;
+}
+
+/* Masthead Container */
+.masthead-container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 100px; /* Push content down from fixed nav */
+}
+
+@media (min-width: 768px) {
+    .masthead-container {
+        padding-top: 120px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .masthead-container {
+        padding-top: 80px; /* Desktop has more space */
+    }
+}
+
+.masthead-content {
+    display: flex;
+    justify-content: center;
+}
+
+.masthead-text-center {
+    text-align: center;
+}
+
+/* Hero Title */
+.hero-title {
+    margin: 0 auto;
+    font-family: 'Playfair Display', serif;
+    font-size: 4.5rem;
+    line-height: 4.5rem;
+    letter-spacing: 0.8rem;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.hero-subtitle {
+    margin: 2rem auto 3rem;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1.5rem;
+    max-width: 50rem;
+}
+
+.hero-buttons {
+    margin-top: 3rem;
+}
+
+/* Button Styles */
+.btn-primary-custom {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: #f97316;
+    color: white;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    margin-right: 1rem;
+}
+
+.btn-outline-custom {
+    display: inline-block;
+    padding: 1rem 2rem;
+    border: 2px solid white;
+    color: white;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    font-weight: 600;
+}
+
+/* Social Links */
+.social-links {
+    margin-top: 3rem;
+}
+
+.social-link {
+    color: white;
+    font-size: 2rem;
+    margin: 0 1rem;
+    text-decoration: none;
+}
+
+/* Scroll Indicator */
+.scroll-indicator {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.scroll-indicator a {
+    color: white;
+    text-decoration: none;
+}
+
+.scroll-indicator i {
+    font-size: 2rem;
+}
+
+/* Bounce Animation */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.bounce-animation {
+    animation: bounce 2s infinite;
+}
