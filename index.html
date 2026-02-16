@@ -4,8 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Slobodan Milosavljević - BA/PO Portfolio</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
     <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/custom.css">
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
@@ -13,19 +19,28 @@
 
     <!-- Masthead Header with Rtanj Mountain -->
     <header class="masthead">
-        <!-- Top Navigation -->
-        <nav>
-            <!-- Hamburger Menu Button (Mobile Only) -->
-            <button class="hamburger-menu" id="hamburgerBtn" aria-label="Toggle menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            
-            <div class="nav-menu" id="navMenu">
-                <a href="#overview">Overview</a>
-                <a href="#case-studies">Case Studies</a>
-                <a href="#contact">Contact</a>
+        <!-- Bootstrap Navigation with Built-in Hamburger -->
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top main-nav">
+            <div class="container-fluid">
+                <!-- Hamburger Toggle Button (Built-in Bootstrap) -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <!-- Navigation Links -->
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#overview">Overview</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#case-studies">Case Studies</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
         
@@ -115,7 +130,7 @@
                    
                     </div>
                     
-                    <!-- Right Side - Image Placeholder -->
+                    <!-- Right Side - Decorative -->
                     <div class="relative bg-gradient-to-br from-gray-100 to-gray-200 min-h-[700px] flex items-center justify-center">
                         <!-- Status Badge -->
                         <div class="absolute top-8 left-8 right-8">
@@ -125,7 +140,7 @@
                             </div>
                         </div>
                         
-                        <!-- Image Placeholder -->
+                        <!-- Decorative Circle -->
                         <div class="text-center px-8">
                             <div class="w-64 h-64 mx-auto rounded-full bg-gradient-to-br from-blue-100 to-blue-200 border-8 border-white shadow-2xl flex items-center justify-center mb-6">
                                 <svg viewBox="0 0 200 200" class="w-32 h-32">
@@ -137,6 +152,76 @@
                         <!-- Decorative Elements -->
                         <div class="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-blue-900/10 to-transparent"></div>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What I Learned Section -->
+    <section class="py-12 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="mb-12">
+                <h2 class="text-6xl font-bold text-gray-900 mb-6">What I Learned.</h2>
+                <p class="text-2xl text-gray-600 max-w-4xl">
+                    After 20+ years in IT consulting, here's what experience taught me.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-2 gap-8 what-i-learned-grid">
+                <!-- Learning 1: PLACEHOLDER - Add Real Example -->
+                <div class="rounded-2xl p-10 border-2 border-orange-300 what-i-learned-card" style="background-color: #fed7aa;">
+                    <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mb-4">
+                        <svg class="w-8 h-8 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-3">Complex Organizations</h3>
+                    <p class="text-gray-700 leading-relaxed">
+                        <strong>[PLACEHOLDER - Add your real example here!]</strong><br><br>
+                        Example: "At [Company Name], I improved the [specific process] by focusing on just ONE segment - [what you changed]. Result: [impact/outcome]."
+                    </p>
+                </div>
+
+                <!-- Learning 2: PLACEHOLDER - Add Real Example -->
+                <div class="rounded-2xl p-10 border-2 border-orange-300 what-i-learned-card" style="background-color: #fed7aa;">
+                    <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mb-4">
+                        <svg class="w-8 h-8 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-3">Listen to Users</h3>
+                    <p class="text-gray-700 leading-relaxed">
+                        <strong>[PLACEHOLDER - Add your real example here!]</strong><br><br>
+                        Example: "Users said they needed '[what they asked for]' - but after listening, they actually needed '[what they really needed]'. We [what you did instead]."
+                    </p>
+                </div>
+
+                <!-- Learning 3: PLACEHOLDER - Add Real Example -->
+                <div class="rounded-2xl p-10 border-2 border-orange-300 what-i-learned-card" style="background-color: #fed7aa;">
+                    <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mb-4">
+                        <svg class="w-8 h-8 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-3">Patience Wins</h3>
+                    <p class="text-gray-700 leading-relaxed">
+                        <strong>[PLACEHOLDER - Add your real example here!]</strong><br><br>
+                        Example: "The [project name] took [actual time] instead of [planned time]. But the extra time meant [benefit]. Still [positive outcome] today."
+                    </p>
+                </div>
+
+                <!-- Learning 4: PLACEHOLDER - Add Real Example -->
+                <div class="rounded-2xl p-10 border-2 border-orange-300 what-i-learned-card" style="background-color: #fed7aa;">
+                    <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mb-4">
+                        <svg class="w-8 h-8 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-3">Not to be Perfect</h3>
+                    <p class="text-gray-700 leading-relaxed italic">
+                        <strong>[PLACEHOLDER - Add your real example here!]</strong><br><br>
+                        Example: "Instead of waiting for perfect [system/solution], we shipped [what you shipped] in [timeframe]. Result: [feedback and iterations that followed]."
+                    </p>
                 </div>
             </div>
         </div>
@@ -775,55 +860,41 @@
     <!-- Footer -->
     <footer class="bg-gray-900 text-gray-400 py-8">
         <div class="max-w-7xl mx-auto px-6 text-center text-sm">
-            <p>© 2026 Slobodan Milosavljević</p>
+            <p>© 2026 Slobodan Milosavljević | Senior Business Analyst & Product Owner</p>
         </div>
     </footer>
 
-    <!-- Sticky Navigation Script -->
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom Scripts -->
     <script>
-        // Add scrolled class to navigation when user scrolls
+        // Sticky Navigation on Scroll
         window.addEventListener('scroll', function() {
-            const nav = document.querySelector('.masthead nav');
-            if (window.scrollY > 50) {
-                nav.classList.add('scrolled');
-            } else {
-                nav.classList.remove('scrolled');
+            const nav = document.querySelector('.main-nav');
+            if (nav) {
+                if (window.scrollY > 50) {
+                    nav.classList.add('scrolled');
+                } else {
+                    nav.classList.remove('scrolled');
+                }
             }
         });
         
-        // Hamburger Menu Toggle
-        const hamburgerBtn = document.getElementById('hamburgerBtn');
-        const navMenu = document.getElementById('navMenu');
-        
-        if (hamburgerBtn && navMenu) {
-            hamburgerBtn.addEventListener('click', function() {
-                hamburgerBtn.classList.toggle('active');
-                navMenu.classList.toggle('active');
-                document.body.classList.toggle('menu-open');
-            });
+        // Auto-close navbar on link click (mobile)
+        document.addEventListener('DOMContentLoaded', function() {
+            const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+            const navbarCollapse = document.getElementById('navbarNav');
             
-            // Close menu when clicking on a link
-            const navLinks = navMenu.querySelectorAll('a');
             navLinks.forEach(link => {
                 link.addEventListener('click', function() {
-                    hamburgerBtn.classList.remove('active');
-                    navMenu.classList.remove('active');
-                    document.body.classList.remove('menu-open');
+                    if (navbarCollapse.classList.contains('show')) {
+                        const bsCollapse = new bootstrap.Collapse(navbarCollapse);
+                        bsCollapse.hide();
+                    }
                 });
             });
-            
-            // Close menu when clicking outside
-            document.addEventListener('click', function(event) {
-                const isClickInsideNav = navMenu.contains(event.target);
-                const isClickOnHamburger = hamburgerBtn.contains(event.target);
-                
-                if (!isClickInsideNav && !isClickOnHamburger && navMenu.classList.contains('active')) {
-                    hamburgerBtn.classList.remove('active');
-                    navMenu.classList.remove('active');
-                    document.body.classList.remove('menu-open');
-                }
-            });
-        }
+        });
     </script>
 
 </body>
