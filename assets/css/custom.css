@@ -3,7 +3,7 @@
 @font-face{font-family:'Antipasto';src:url(../fonts/AntipastoPro-Thin.woff2) format("woff2");font-weight:100;font-style:normal;font-display:swap}
 body{font-family:'Antipasto',sans-serif;background-color:#f5f5f5}
 .display-font{font-family:'Antipasto',serif;font-weight:700}
-.masthead{position:relative;width:100%;height:100vh;min-height:600px;background:linear-gradient(to right,#000000e6 0%,#000000b3 30%,#0006 50%,#0003 70%,transparent 100%),url(../images/main/slobodan-half-profile.png);background-position:center right;background-repeat:no-repeat;background-attachment:scroll;background-size:auto 100%}
+.masthead{position:relative;width:100%;height:100vh;min-height:600px;background:linear-gradient(to right,#000000e6 0%,#000000b3 30%,#0006 50%,#0003 70%,transparent 100%),url(../images/main/slobodan-half-profile.webp);background-position:center right;background-repeat:no-repeat;background-attachment:scroll;background-size:auto 100%}
 .masthead::after{content:'';position:absolute;bottom:0;left:0;width:100%;height:60px;background-size:cover;background-position:center;background-repeat:no-repeat;filter:brightness(0.6) sepia(1) hue-rotate(190deg) saturate(3);z-index:10}
 .masthead-container{height:100vh;padding-top:100px}
 .masthead-text-center{text-align:center}
@@ -60,7 +60,7 @@ body{font-family:'Antipasto',sans-serif;background-color:#f5f5f5}
 .masthead-container{padding-top:80px}
 }
 @media (max-width: 767px) {
-.masthead{background:linear-gradient(to bottom,rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.6) 40%,rgba(0,0,0,0.3) 70%,transparent 100%),url(../images/main/slobodan-half-profile.png);background-position:65% top;background-size:cover;background-repeat:no-repeat}
+.masthead{background:linear-gradient(to bottom,rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.6) 40%,rgba(0,0,0,0.3) 70%,transparent 100%),url(../images/main/slobodan-half-profile.webp);background-position:65% top;background-size:cover;background-repeat:no-repeat}
 .masthead::after{height:40px}
 .masthead-container{padding-top:120px}
 .hero-title{font-size:2rem!important;line-height:2.2rem!important;letter-spacing:.2rem!important}
