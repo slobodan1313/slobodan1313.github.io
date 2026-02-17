@@ -4,918 +4,554 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Slobodan Milosavljević - BA/PO Portfolio</title>
-    
-    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    
-    <!-- Font Awesome -->
     <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
-    
-    <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/custom.css">
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
-<body class="bg-gray-50">
+<body>
 
-    <!-- Masthead Header with Rtanj Mountain -->
-    <header class="masthead">
-        <!-- Bootstrap Navigation with Built-in Hamburger -->
-        <nav class="navbar navbar-expand-md navbar-dark fixed-top main-nav">
-            <div class="container-fluid">
-                <!-- Hamburger Toggle Button (Built-in Bootstrap) -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                
-                <!-- Navigation Links -->
-                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#overview">Overview</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#case-studies">Case Studies</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#contact">Contact</a>
-                        </li>
-                    </ul>
-                </div>
+<!-- ===================== HERO ===================== -->
+<header class="masthead">
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top main-nav">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#overview">Overview</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#case-studies">Case Studies</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
             </div>
-        </nav>
-        
-        <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center masthead-container">
-            <div class="d-flex justify-content-center masthead-content">
-                <div class="text-center masthead-text-center">
-                    <h1 class="mx-auto my-0 hero-title">
-                        Slobodan Milosavljević
-                    </h1>
-                    <h2 class="text-white-50 mx-auto mt-4 mb-5 hero-subtitle">
-                        Navigating Complex Landscapes to Reach User-Centered Peaks
-                    </h2>
-                    <div class="mt-5 hero-buttons">
-                        <a class="btn btn-primary btn-lg me-3 btn-primary-custom" href="#case-studies">
-                            View Case Studies
-                        </a>
-                        <a class="btn btn-outline-light btn-lg btn-outline-custom" href="#contact">
-                            Get In Touch
-                        </a>
-                    </div>
-                    
-                    <!-- Social Links -->
-                    <div class="mt-5 social-links">
-                        <a href="https://linkedin.com/in/YOUR-LINKEDIN-PROFILE" target="_blank" rel="noopener" class="mx-3 text-white social-link">
-                            <i class="fab fa-linkedin"></i>
-                        </a>
-                        <a href="/cdn-cgi/l/email-protection#cba8a4a5bfaaa8bf8baeb3aaa6bba7aee5a8a4a6" class="mx-3 text-white social-link">
-                            <i class="fas fa-envelope"></i>
-                        </a>
-                        <a href="https://github.com/YOUR-GITHUB-USERNAME" target="_blank" rel="noopener" class="mx-3 text-white social-link">
-                            <i class="fab fa-github"></i>
-                        </a>
-                    </div>
+        </div>
+    </nav>
+
+    <div class="container masthead-container">
+        <div class="row justify-content-center align-items-center h-100">
+            <div class="col-12 text-center masthead-text-center">
+                <h1 class="hero-title">Slobodan Milosavljević</h1>
+                <h2 class="hero-subtitle">Navigating Complex Landscapes to Reach User-Centered Peaks</h2>
+                <div class="hero-buttons">
+                    <a class="btn btn-lg me-3 btn-primary-custom" href="#case-studies">View Case Studies</a>
+                    <a class="btn btn-lg btn-outline-custom" href="#contact">Get In Touch</a>
+                </div>
+                <div class="social-links">
+                    <a href="https://linkedin.com/in/YOUR-LINKEDIN-PROFILE" target="_blank" rel="noopener" class="social-link"><i class="fab fa-linkedin"></i></a>
+                    <a href="/cdn-cgi/l/email-protection#cba8a4a5bfaaa8bf8baeb3aaa6bba7aee5a8a4a6" class="social-link"><i class="fas fa-envelope"></i></a>
+                    <a href="https://github.com/slobodan1313" target="_blank" rel="noopener" class="social-link"><i class="fab fa-github"></i></a>
                 </div>
             </div>
         </div>
-        
-        <!-- Scroll Down Indicator -->
-        <div class="scroll-indicator">
-            <a href="#overview">
-                <i class="fas fa-chevron-down bounce-animation"></i>
-            </a>
-        </div>
-    </header>
+    </div>
+
+    <div class="scroll-indicator">
+        <a href="#overview"><i class="fas fa-chevron-down bounce-animation"></i></a>
+    </div>
+</header>
 
 
-    <!-- Personal Introduction Section -->
-<!-- Personal Introduction Section -->
-<section class="bg-gray-100 py-12">
-    <div class="max-w-7xl mx-auto px-6">
-        <div class="bg-white rounded-3xl shadow-xl overflow-hidden">
-            <div class="grid grid-cols-2 gap-0">
-                <!-- Left Side - Introduction Text -->
-                <div class="p-16 flex flex-col justify-center">
-                    
-                    <h2 class="text-5xl font-bold text-gray-900 mb-6">
-                        Hello 👋 I'm Slobodan,
-                    </h2>
-                    
-                    <p class="text-2xl text-gray-700 leading-relaxed mb-8">
-                        a business consultant with <span class="">over 20 years in IT</span>. 
-                        Passionate about <span class="">user-centricity</span>: empowering businesses 
-                        with <span class="">digital ecosystems</span> that connect vision to reality.
+<!-- ===================== INTRODUCTION ===================== -->
+<section class="py-5" style="background-color:#f3f4f6;">
+    <div class="container">
+        <div class="bg-white rounded-4 shadow overflow-hidden">
+            <div class="row g-0">
+                <div class="col-12 col-lg-7 p-4 p-lg-5 d-flex flex-column justify-content-center">
+                    <h2 class="fw-bold mb-4" style="font-size:2.5rem;">Hello 👋 I'm Slobodan,</h2>
+                    <p class="fs-5 text-secondary lh-lg mb-4">
+                        a business consultant with <strong>over 20 years in IT</strong>.
+                        Passionate about <strong>user-centricity</strong>: empowering businesses
+                        with <strong>digital ecosystems</strong> that connect vision to reality.
                     </p>
-
                     <div class="philosophy-box">
-                        <p class="text-lg text-gray-700 italic leading-relaxed">
+                        <p class="fst-italic lh-lg mb-0">
                             <span class="philosophy-icon">🌱</span>
-                            <span class="font-semibold text-gray-900">Why I grow herbal plants from seeds:</span> 
-                            Like great digital solutions, they need the right environment, systematic nurturing, and patience. 
+                            <strong>Why I grow herbal plants from seeds:</strong>
+                            Like great digital solutions, they need the right environment, systematic nurturing, and patience.
                             You can't rush growth—but with proper care, both become something valuable and sustainable.
                         </p>
                     </div>
-                    
-                    <!-- Industry Experience -->
-                    <div class="mt-8 mb-8">
-                        <p class="text-gray-700 text-lg leading-relaxed">
-                            I've partnered with <span class="">large international companies</span> across diverse sectors—<span class="font-semibold">automotive</span>, <span class="font-semibold">beauty</span>, <span class="font-semibold">home intelligence</span>, <span class="font-semibold">construction</span>, and beyond—bringing user-centered thinking to complex business challenges.
+                    <div class="mt-4">
+                        <p class="text-secondary lh-lg mb-0">
+                            I've partnered with <strong>large international companies</strong> across diverse sectors—<strong>automotive</strong>, <strong>beauty</strong>, <strong>home intelligence</strong>, <strong>construction</strong>, and beyond—bringing user-centered thinking to complex business challenges.
                         </p>
                     </div>
-                   
-                    </div>
-                    
-                    <!-- Right Side - Decorative -->
-                    <div class="relative bg-gradient-to-br from-gray-100 to-gray-200 min-h-[700px] flex items-center justify-center">
-                       
-                        <!-- Decorative Circle -->
-                        <div class="text-center px-8">
-                            <div class="w-64 h-64 mx-auto rounded-full bg-gradient-to-br from-blue-100 to-blue-200 border-8 border-white shadow-2xl flex items-center justify-center mb-6">
-                                <svg viewBox="0 0 200 200" class="w-32 h-32">
-                                    <text x="100" y="135" fill="#1e3a5f" font-size="120" font-weight="bold" text-anchor="middle" font-family="Arial">S</text>
-                                </svg>
-                            </div>
-                        </div>
-                        
-                        <!-- Decorative Elements -->
-                        <div class="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-blue-900/10 to-transparent"></div>
-                    </div>
                 </div>
+                <div class="col-lg-5 d-none d-lg-block" style="background:linear-gradient(135deg,#e5e7eb,#d1d5db);min-height:500px;"></div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- What I Learned Section -->
-    <section class="py-12 bg-white">
-        <div class="max-w-7xl mx-auto px-6">
-            <div class="mb-12">
-                <h2 class="text-6xl font-bold text-gray-900 mb-6">What I Learned.</h2>
-                <p class="text-2xl text-gray-600 max-w-4xl">
-                    After 20+ years in IT consulting, here's what experience taught me.
-                </p>
-            </div>
 
-            <div class="grid grid-cols-2 gap-8 what-i-learned-grid">
-                <!-- Learning 1: PLACEHOLDER - Add Real Example -->
-                <div class="rounded-2xl p-10 border-2 border-orange-300 what-i-learned-card" style="background-color: #fed7aa;">
-                    <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mb-4">
-                        <svg class="w-8 h-8 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
-                        </svg>
-                    </div>
-					<h3 class="text-2xl font-bold text-gray-900 mb-3">Complex Organizations</h3>
-					<p class="text-gray-700 leading-relaxed">
-						Every organization has its own culture and vocabulary. Before I can fix anything, 
-						I need to learn how they talk—their specific terms, their acronyms, their way 
-						of describing things. Clear communication starts with speaking their language.
-						<br><br>
-						One of my favorite tactics? Job shadowing. I don't just interview people about 
-						their process—I actively follow them through their day. I watch what they actually 
-						do, not what they say they do in meetings. Big difference.
-						<br><br>
-						From that hands-on observation, I create clear BPMN diagrams that map the real 
-						process. Then comes the fun part: spotting improvement opportunities. Most often? 
-						Cutting unnecessary steps. Less process, better results.
-					</p>
-                </div>
-
-                <!-- Learning 2: PLACEHOLDER - Add Real Example -->
-                <div class="rounded-2xl p-10 border-2 border-orange-300 what-i-learned-card" style="background-color: #fed7aa;">
-                    <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mb-4">
-                        <svg class="w-8 h-8 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
-                        </svg>
-                    </div>
-					<h3 class="text-2xl font-bold text-gray-900 mb-3">Listen to Users</h3>
-					<p class="text-gray-700 leading-relaxed">
-						On every new project, my first move is to find the key decision maker—fast. 
-						I don't stop until I get to them. Why? Because it makes life easier for everyone: 
-						me, the business stakeholders, and the whole team.
-						<br><br>
-						Going straight to the source prevents stakeholder influence from muddying the waters. 
-						I get firsthand knowledge of the real business objective—not the filtered version 
-						that's been passed down through three meetings.
-						<br><br>
-						Once I have that clarity, everything else falls into place: a branched stakeholder 
-						map, a clear communication plan, and I'm ready to take concrete action.
-					</p>
-                </div>
-
-                <!-- Learning 3: PLACEHOLDER - Add Real Example -->
-                <div class="rounded-2xl p-10 border-2 border-orange-300 what-i-learned-card" style="background-color: #fed7aa;">
-                    <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mb-4">
-                        <svg class="w-8 h-8 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                        </svg>
-                    </div>
-					<h3 class="text-2xl font-bold text-gray-900 mb-3">Transparency</h3>
-					<p class="text-gray-700 leading-relaxed">
-						Full disclosure: I built this portfolio using an AI LLM. And honestly? 
-						It was incredibly fun. Fast, too—no stress, no struggle, just a smooth process 
-						from idea to live site.
-						<br><br>
-						This page has two sections that matter most: Case Studies and Contact. 
-						Everything else is just context to get you there. Simple, focused, effective.
-						<br><br>
-						Want to try building your own? You should. You'll be surprised how easy it is. ;)
-					</p>
-                </div>
-
-                <!-- Learning 4: PLACEHOLDER - Add Real Example -->
-                <div class="rounded-2xl p-10 border-2 border-orange-300 what-i-learned-card" style="background-color: #fed7aa;">
-                    <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mb-4">
-                        <svg class="w-8 h-8 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                        </svg>
-                    </div>
-					<h3 class="text-2xl font-bold text-gray-900 mb-3">Not to be Perfect</h3>
-					<p class="text-gray-700 leading-relaxed italic">
-						I'm a big believer in the agile manifesto—especially the part about embracing change. 
-						Stories will shift. Requirements will evolve. That's not a problem, that's the point.
-						<br><br>
-						I've learned that Jira artifacts—stories, epics, subtasks—can't be perfect. They're 
-						not meant to be. They're tools for common understanding, shared documents that get 
-						everyone on the same page. Good enough to start the conversation.
-						<br><br>
-						Once I've aligned with the team, we move to refinement. That's where we crystallize 
-						everything one more time. The result? A clear scope and stories that actually fit 
-						in one sprint—no spillover into the next.
-						<br><br>
-						Do you like this approach?
-					</p>
-                </div>
-            </div>
+<!-- ===================== WHAT I LEARNED ===================== -->
+<section class="py-5 bg-white">
+    <div class="container">
+        <div class="mb-5">
+            <h2 class="fw-bold display-5 mb-3">What I Learned.</h2>
+            <p class="fs-5 text-secondary">After 20+ years in IT consulting, here's what experience taught me.</p>
         </div>
-    </section>
-
-    <!-- Capabilities Section -->
-    <section class="pt-16 pb-12" id="overview">
-        <div class="max-w-7xl mx-auto px-6">
-            <div class="mb-12">
-                <h2 class="text-6xl font-bold text-gray-900 mb-6">Where I'm most useful.</h2>
-                <p class="text-2xl text-gray-600 max-w-4xl">
-                    Most of my work falls into a few patterns. If you see yourself in one of these, we should talk.
-                </p>
-            </div>
-
-            <div class="grid grid-cols-2 gap-12 mb-16">
-                <!-- Requirements & User Experience -->
-                <div class="bg-white rounded-2xl p-10 shadow-lg">
-                    <h3 class="text-3xl font-bold text-gray-900 mb-4">Requirements & User Experience</h3>
-                    <p class="text-lg text-gray-700 leading-relaxed">
-                        When you need to transform <span class="">fuzzy business needs</span> into clear requirements, I create 
-                        <span class="">wireframes</span>, map <span class="">user journeys</span>, and apply 
-                        <span class="">Usability Engineering principles</span> so your team can ship experiences users actually want. 
-                        From personas and scenarios to interaction flows and acceptance criteria, I bridge the gap between 
-                        <em class="text-gray-900 font-semibold">what users need</em> and <em class="text-gray-900 font-semibold">what gets built</em>.
-                    </p>
-                </div>
-
-                <!-- Business Process Optimization -->
-                <div class="bg-white rounded-2xl p-10 shadow-lg">
-                    <h3 class="text-3xl font-bold text-gray-900 mb-4">Business Process Optimization</h3>
-                    <p class="text-lg text-gray-700 leading-relaxed">
-                        When your processes are unclear or inefficient, I document and redesign them using 
-                        <span class="">BPMN diagrams</span> and <span class="">process modeling</span>. 
-                        I analyze current state workflows, identify bottlenecks and gaps, then design future state processes that 
-                        align with <span class="">business objectives</span> and <span class="">system capabilities</span>. 
-                        The result: <em class="text-gray-900 font-semibold">visual clarity</em> that gets stakeholders aligned and 
-                        <em class="text-gray-900 font-semibold">systematic improvements</em> that deliver measurable results.
-                    </p>
-                </div>
-
-                <!-- Integration & Data Mapping -->
-                <div class="bg-white rounded-2xl p-10 shadow-lg">
-                    <h3 class="text-3xl font-bold text-gray-900 mb-4">Integration & Data Mapping</h3>
-                    <p class="text-lg text-gray-700 leading-relaxed">
-                        When you're connecting <span class="">ERP systems</span>, e-commerce platforms, and 
-                        <span class="">multi-vendor ecosystems</span>, I map data flows, define transformation rules, 
-                        and document integration touchpoints. From <span class="">cXML payloads</span> to 
-                        <span class="">API specifications</span>, I ensure your systems speak the same language and 
-                        data moves <em class="text-gray-900 font-semibold">accurately</em> and <em class="text-gray-900 font-semibold">reliably</em> 
-                        across boundaries.
-                    </p>
-                </div>
-
-                <!-- Discovery & Documentation -->
-                <div class="bg-white rounded-2xl p-10 shadow-lg">
-                    <h3 class="text-3xl font-bold text-gray-900 mb-4">Discovery & Documentation</h3>
-                    <p class="text-lg text-gray-700 leading-relaxed">
-                        When your project has scattered information and unclear scope, I conduct 
-                        <span class="">structured discovery</span> through workshops, interviews, and analysis. 
-                        I create <span class="">comprehensive documentation frameworks</span> in Confluence and Jira 
-                        that provide traceability from <em class="text-gray-900 font-semibold">business objectives</em> through 
-                        <em class="text-gray-900 font-semibold">technical implementation</em>. My documentation becomes the 
-                        single source of truth that keeps complex projects on track.
+        <div class="row g-4">
+            <div class="col-12 col-md-6">
+                <div class="rounded-3 p-4 p-md-5 h-100 what-i-learned-card" style="background:#fed7aa;border:2px solid #fb923c;">
+                    <div class="rounded-circle d-flex align-items-center justify-content-center mb-3" style="width:56px;height:56px;background:#ffedd5;">
+                        <svg width="28" height="28" fill="none" stroke="#ea580c" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
+                    </div>
+                    <h3 class="fw-bold fs-5 mb-3">Complex Organizations</h3>
+                    <p class="lh-lg mb-0">
+                        Every organization has its own culture and vocabulary. Before I can fix anything,
+                        I need to learn how they talk—their specific terms, their acronyms, their way
+                        of describing things. Clear communication starts with speaking their language.<br><br>
+                        One of my favorite tactics? Job shadowing. I don't just interview people about
+                        their process—I actively follow them through their day. I watch what they actually
+                        do, not what they say they do in meetings. Big difference.<br><br>
+                        From that hands-on observation, I create clear BPMN diagrams that map the real
+                        process. Then comes the fun part: spotting improvement opportunities. Most often?
+                        Cutting unnecessary steps. Less process, better results.
                     </p>
                 </div>
             </div>
-
-            <!-- Visual Examples Section -->
-            <div class="bg-white rounded-2xl p-12 shadow-xl">
-                <h3 class="text-3xl font-bold text-gray-900 mb-6 text-center">My Creative Documentation</h3>
-                <p class="text-lg text-gray-600 text-center mb-12 max-w-3xl mx-auto">
-                    I believe good requirements aren't just written—they're <span class="">visualized</span>. 
-                    Here's where my <span class="">creativity meets systematic analysis</span>.
-                </p>
-                
-                <div class="grid grid-cols-3 gap-8">
-                    <!-- BPMN Placeholder -->
-                    <div class="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl p-8 border-2 border-dashed border-blue-300 min-h-[300px] flex flex-col items-center justify-center hover:border-blue-500 transition-colors">
-                        <div class="w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center mb-4">
-                            <svg class="w-10 h-10 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
-                            </svg>
-                        </div>
-                        <h4 class="font-bold text-lg text-gray-900 mb-2">BPMN Diagrams</h4>
-                        <p class="text-sm text-gray-600 text-center mb-4">Process flows & workflows</p>
-                        <div class="text-xs text-gray-500 italic">📊 Add your BPMN example</div>
+            <div class="col-12 col-md-6">
+                <div class="rounded-3 p-4 p-md-5 h-100 what-i-learned-card" style="background:#fed7aa;border:2px solid #fb923c;">
+                    <div class="rounded-circle d-flex align-items-center justify-content-center mb-3" style="width:56px;height:56px;background:#ffedd5;">
+                        <svg width="28" height="28" fill="none" stroke="#ea580c" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
                     </div>
-
-                    <!-- Wireframes Placeholder -->
-                    <div class="bg-gradient-to-br from-green-50 to-emerald-50 rounded-xl p-8 border-2 border-dashed border-green-300 min-h-[300px] flex flex-col items-center justify-center hover:border-green-500 transition-colors">
-                        <div class="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mb-4">
-                            <svg class="w-10 h-10 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z"/>
-                            </svg>
-                        </div>
-                        <h4 class="font-bold text-lg text-gray-900 mb-2">UX Wireframes</h4>
-                        <p class="text-sm text-gray-600 text-center mb-4">User interface mockups</p>
-                        <div class="text-xs text-gray-500 italic">🎨 Add your wireframe example</div>
-                    </div>
-
-                    <!-- User Journey Placeholder -->
-                    <div class="bg-gradient-to-br from-purple-50 to-violet-50 rounded-xl p-8 border-2 border-dashed border-purple-300 min-h-[300px] flex flex-col items-center justify-center hover:border-purple-500 transition-colors">
-                        <div class="w-20 h-20 bg-purple-100 rounded-full flex items-center justify-center mb-4">
-                            <svg class="w-10 h-10 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/>
-                            </svg>
-                        </div>
-                        <h4 class="font-bold text-lg text-gray-900 mb-2">User Journey Maps</h4>
-                        <p class="text-sm text-gray-600 text-center mb-4">Experience flows & touchpoints</p>
-                        <div class="text-xs text-gray-500 italic">🗺️ Add your journey map example</div>
-                    </div>
+                    <h3 class="fw-bold fs-5 mb-3">Listen to Users</h3>
+                    <p class="lh-lg mb-0">
+                        On every new project, my first move is to find the key decision maker—fast.
+                        I don't stop until I get to them. Why? Because it makes life easier for everyone:
+                        me, the business stakeholders, and the whole team.<br><br>
+                        Going straight to the source prevents stakeholder influence from muddying the waters.
+                        I get firsthand knowledge of the real business objective—not the filtered version
+                        that's been passed down through three meetings.<br><br>
+                        Once I have that clarity, everything else falls into place: a branched stakeholder
+                        map, a clear communication plan, and I'm ready to take concrete action.
+                    </p>
                 </div>
-
-                <div class="mt-10 pt-8 border-t border-gray-200 text-center">
-                    <p class="text-gray-600 italic">
-                        "I don't just write requirements—I <span class="">visualize systems</span>, 
-                        <span class="">design experiences</span>, and <span class="">document processes</span> 
-                        that bring clarity to complexity."
+            </div>
+            <div class="col-12 col-md-6">
+                <div class="rounded-3 p-4 p-md-5 h-100 what-i-learned-card" style="background:#fed7aa;border:2px solid #fb923c;">
+                    <div class="rounded-circle d-flex align-items-center justify-content-center mb-3" style="width:56px;height:56px;background:#ffedd5;">
+                        <svg width="28" height="28" fill="none" stroke="#ea580c" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                    </div>
+                    <h3 class="fw-bold fs-5 mb-3">Transparency</h3>
+                    <p class="lh-lg mb-0">
+                        Full disclosure: I built this portfolio using an AI LLM. And honestly?
+                        It was incredibly fun. Fast, too—no stress, no struggle, just a smooth process
+                        from idea to live site.<br><br>
+                        This page has two sections that matter most: Case Studies and Contact.
+                        Everything else is just context to get you there. Simple, focused, effective.<br><br>
+                        Want to try building your own? You should. You'll be surprised how easy it is. ;)
+                    </p>
+                </div>
+            </div>
+            <div class="col-12 col-md-6">
+                <div class="rounded-3 p-4 p-md-5 h-100 what-i-learned-card" style="background:#fed7aa;border:2px solid #fb923c;">
+                    <div class="rounded-circle d-flex align-items-center justify-content-center mb-3" style="width:56px;height:56px;background:#ffedd5;">
+                        <svg width="28" height="28" fill="none" stroke="#ea580c" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                    </div>
+                    <h3 class="fw-bold fs-5 mb-3">Not to be Perfect</h3>
+                    <p class="lh-lg fst-italic mb-0">
+                        I'm a big believer in the agile manifesto—especially the part about embracing change.
+                        Stories will shift. Requirements will evolve. That's not a problem, that's the point.<br><br>
+                        I've learned that Jira artifacts—stories, epics, subtasks—can't be perfect. They're
+                        not meant to be. They're tools for common understanding, shared documents that get
+                        everyone on the same page. Good enough to start the conversation.<br><br>
+                        Once I've aligned with the team, we move to refinement. That's where we crystallize
+                        everything one more time. The result? A clear scope and stories that actually fit
+                        in one sprint—no spillover into the next.<br><br>
+                        Do you like this approach?
                     </p>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Case Studies Section -->
-    <section id="case-studies" class="py-12 bg-gray-50">
-        <div class="max-w-7xl mx-auto px-6">
-            <div class="mb-16 text-center">
-                <h2 class="text-5xl font-bold text-gray-900 mb-4 display-font">Case Studies</h2>
-                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-                    Deep-dive analyses of complex projects demonstrating problem-solving, stakeholder management, 
-                    and delivery excellence in enterprise environments.
-                </p>
-            </div>
 
-            <!-- Case Study 1: PunchOut MVP -->
-            <div class="case-study-card bg-white rounded-2xl shadow-lg p-12 mb-12">
-                <div class="relative">
-                    <div class="section-number">01</div>
-                    
-                    <!-- Header -->
-                    <div class="flex justify-between items-start mb-8">
-                        <div>
-                            <div class="inline-block px-3 py-1 bg-orange-100 text-orange-800 rounded-full text-xs font-semibold mb-3">
-                                ACTIVE PROJECT
-                            </div>
-                            <h3 class="text-4xl font-bold text-gray-900 mb-3 display-font">ADI PunchOut MVP</h3>
-                            <p class="text-xl text-gray-600">B2B Procurement Integration for National Accounts</p>
-                        </div>
-                        <div class="text-right">
-                            <div class="text-sm text-gray-500 mb-1">Duration</div>
-                            <div class="text-lg font-semibold text-gray-900">6 months</div>
-                            <div class="text-sm text-gray-500 mt-2 mb-1">Budget</div>
-                            <div class="text-lg font-semibold text-gray-900">$2.5M+</div>
-                        </div>
-                    </div>
-
-                    <!-- Executive Summary -->
-                    <div class="highlight-box mb-10">
-                        <h4 class="text-lg font-bold text-gray-900 mb-4 flex items-center gap-2">
-                            <svg class="w-5 h-5 text-gray-800" fill="currentColor" viewBox="0 0 20 20">
-                                <path d="M9 2a1 1 0 000 2h2a1 1 0 100-2H9z"/>
-                                <path fill-rule="evenodd" d="M4 5a2 2 0 012-2 3 3 0 003 3h2a3 3 0 003-3 2 2 0 012 2v11a2 2 0 01-2 2H6a2 2 0 01-2-2V5zm3 4a1 1 0 000 2h.01a1 1 0 100-2H7zm3 0a1 1 0 000 2h3a1 1 0 100-2h-3zm-3 4a1 1 0 100 2h.01a1 1 0 100-2H7zm3 0a1 1 0 100 2h3a1 1 0 100-2h-3z" clip-rule="evenodd"/>
-                            </svg>
-                            Executive Summary
-                        </h4>
-                        <p class="highlight-box-text text-lg">
-                            Led critical <span class="">B2B e-commerce integration</span> connecting APi Group's enterprise procurement system (GEP) 
-                            with ADI Global Distribution's product catalog through <span class="">BigCommerce and P21 ERP</span>. Managed complex 
-                            <span class="">multi-vendor coordination</span> involving Digital Silk, Greenwing Technology, Boomi, and GEP with strict 
-                            <span class="">February 2026 compliance deadline</span>. Project represents ADI's strategic entry into automated B2B 
-                            ordering systems for National account segment.
-                        </p>
-                    </div>
-
-                    <!-- Challenge -->
-                    <div class="mb-10">
-                        <h4 class="text-2xl font-bold text-gray-900 mb-6 flex items-center gap-3">
-                            <span class="w-10 h-10 rounded-full bg-red-100 flex items-center justify-center flex-shrink-0">
-                                <svg class="w-5 h-5 text-red-600" fill="currentColor" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd"/>
-                                </svg>
-                            </span>
-                            Business Challenge
-                        </h4>
-                        <div class="grid grid-cols-2 gap-6 pl-13">
-                            <div class="challenge-tag rounded-lg p-6">
-                                <h5 class="font-bold mb-2 flex items-center gap-2">
-                                    <span class="text-lg">⚠️</span>
-                                    Integration Complexity
-                                </h5>
-                                <p class="text-sm leading-relaxed">
-                                    Three-phase PunchOut flow (session setup, cart return, PO submission) across five 
-                                    disparate systems with no existing integration patterns. Greenwing middleware functioning 
-                                    as "black box" with minimal documentation.
-                                </p>
-                            </div>
-                            <div class="challenge-tag rounded-lg p-6">
-                                <h5 class="font-bold mb-2 flex items-center gap-2">
-                                    <span class="text-lg">⏰</span>
-                                    Aggressive Timeline
-                                </h5>
-                                <p class="text-sm leading-relaxed">
-                                    February 5, 2026 compliance deadline with April 1, 2026 go-live target. 81-day blockage 
-                                    on PO integration consumed 77% of project timeline, requiring aggressive risk mitigation.
-                                </p>
-                            </div>
-                            <div class="challenge-tag rounded-lg p-6">
-                                <h5 class="font-bold mb-2 flex items-center gap-2">
-                                    <span class="text-lg">🔄</span>
-                                    Multi-Vendor Coordination
-                                </h5>
-                                <p class="text-sm leading-relaxed">
-                                    Four external vendors (Digital Silk, Greenwing, Boomi, GEP) with competing priorities, 
-                                    unclear ownership boundaries, and dependency bottlenecks requiring explicit accountability 
-                                    frameworks.
-                                </p>
-                            </div>
-                            <div class="challenge-tag rounded-lg p-6">
-                                <h5 class="font-bold mb-2 flex items-center gap-2">
-                                    <span class="text-lg">🔒</span>
-                                    Security Vulnerabilities
-                                </h5>
-                                <p class="text-sm leading-relaxed">
-                                    PO interface security issues and order queue behavior problems in P21 ERP requiring 
-                                    ERP architect intervention. Critical dependency on single resource (Jason Capshaw) 
-                                    for resolution.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Approach & Solution -->
-                    <div class="mb-10">
-                        <h4 class="text-2xl font-bold text-gray-900 mb-6 flex items-center gap-3">
-                            <span class="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center flex-shrink-0">
-                                <svg class="w-5 h-5 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
-                                    <path d="M11 3a1 1 0 10-2 0v1a1 1 0 102 0V3zM15.657 5.757a1 1 0 00-1.414-1.414l-.707.707a1 1 0 001.414 1.414l.707-.707zM18 10a1 1 0 01-1 1h-1a1 1 0 110-2h1a1 1 0 011 1zM5.05 6.464A1 1 0 106.464 5.05l-.707-.707a1 1 0 00-1.414 1.414l.707.707zM5 10a1 1 0 01-1 1H3a1 1 0 110-2h1a1 1 0 011 1zM8 16v-1h4v1a2 2 0 11-4 0zM12 14c.015-.34.208-.646.477-.859a4 4 0 10-4.954 0c.27.213.462.519.476.859h4.002z"/>
-                                </svg>
-                            </span>
-                            Approach & Solutions
-                        </h4>
-                        <div class="pl-13">
-                            <!-- Timeline -->
-                            <div class="relative mb-8">
-                                <div class="space-y-8">
-                                    <!-- Discovery Phase -->
-                                    <div class="flex gap-6">
-                                        <div class="relative">
-                                            <div class="timeline-dot rounded-full"></div>
-                                            <div class="timeline-line"></div>
-                                        </div>
-                                        <div class="flex-1 pb-8">
-                                            <div class="solution-tag rounded-lg p-6">
-                                                <div class="flex justify-between items-start mb-3">
-                                                    <h5 class="font-bold text-lg">Phase 1: Discovery & Requirements Engineering</h5>
-                                                    <span class="text-xs font-semibold px-3 py-1 bg-white rounded-full">Months 1-2</span>
-                                                </div>
-                                                <ul class="space-y-2 text-sm">
-                                                    <li class="flex items-start gap-2">
-                                                        <span class="mt-1">→</span>
-                                                        <span>Developed comprehensive UOM mapping specifications across P21, BigCommerce, and GEP systems through iterative stakeholder workshops</span>
-                                                    </li>
-                                                    <li class="flex items-start gap-2">
-                                                        <span class="mt-1">→</span>
-                                                        <span>Created strategic master framework (DXPPO-35) establishing traceability for all vendor integration points and decision documentation</span>
-                                                    </li>
-                                                    <li class="flex items-start gap-2">
-                                                        <span class="mt-1">→</span>
-                                                        <span>Identified "black box" transformation logic in Greenwing middleware as critical knowledge gap requiring discovery investment</span>
-                                                    </li>
-                                                    <li class="flex items-start gap-2">
-                                                        <span class="mt-1">→</span>
-                                                        <span>Established facts-only documentation standard rejecting assumptions without evidence across all vendor communications</span>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- Implementation Phase -->
-                                    <div class="flex gap-6">
-                                        <div class="relative">
-                                            <div class="timeline-dot rounded-full"></div>
-                                            <div class="timeline-line"></div>
-                                        </div>
-                                        <div class="flex-1 pb-8">
-                                            <div class="solution-tag rounded-lg p-6">
-                                                <div class="flex justify-between items-start mb-3">
-                                                    <h5 class="font-bold text-lg">Phase 2: Multi-Vendor Coordination & Unblocking</h5>
-                                                    <span class="text-xs font-semibold px-3 py-1 bg-white rounded-full">Months 3-5</span>
-                                                </div>
-                                                <ul class="space-y-2 text-sm">
-                                                    <li class="flex items-start gap-2">
-                                                        <span class="mt-1">→</span>
-                                                        <span>Coordinated resolution of 81-day PO integration blockage through persistent escalation and evidence-based advocacy for ERP architect engagement</span>
-                                                    </li>
-                                                    <li class="flex items-start gap-2">
-                                                        <span class="mt-1">→</span>
-                                                        <span>Unblocked cart return functionality (January 15, 2026) by working with Digital Silk to implement hidden div solution for cart ID retrieval</span>
-                                                    </li>
-                                                    <li class="flex items-start gap-2">
-                                                        <span class="mt-1">→</span>
-                                                        <span>Completed UOM mapping across three systems after three months of iterative refinement and validation cycles</span>
-                                                    </li>
-                                                    <li class="flex items-start gap-2">
-                                                        <span class="mt-1">→</span>
-                                                        <span>Maintained comprehensive email threads and Jira documentation (DXPPO-138, DXPPO-171) ensuring vendor accountability and decision traceability</span>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- Current Phase -->
-                                    <div class="flex gap-6">
-                                        <div class="relative">
-                                            <div class="timeline-dot rounded-full"></div>
-                                        </div>
-                                        <div class="flex-1">
-                                            <div class="solution-tag rounded-lg p-6">
-                                                <div class="flex justify-between items-start mb-3">
-                                                    <h5 class="font-bold text-lg">Phase 3: Testing & Go-Live Preparation</h5>
-                                                    <span class="text-xs font-semibold px-3 py-1 bg-white rounded-full">Month 6+</span>
-                                                </div>
-                                                <ul class="space-y-2 text-sm">
-                                                    <li class="flex items-start gap-2">
-                                                        <span class="mt-1">→</span>
-                                                        <span>Coordinating UAT with Davis-Ulmer Sprinkler Company (pilot customer) requiring clarification of PM vs. BA ownership boundaries</span>
-                                                    </li>
-                                                    <li class="flex items-start gap-2">
-                                                        <span class="mt-1">→</span>
-                                                        <span>Waiting on Jason Capshaw (ERP architect) return February 5 to finalize PO interface and order queue behavior resolution</span>
-                                                    </li>
-                                                    <li class="flex items-start gap-2">
-                                                        <span class="mt-1">→</span>
-                                                        <span>Structuring ASN (Advanced Shipping Notice) discovery work under DXPPO-61 for post-MVP implementation phase</span>
-                                                    </li>
-                                                    <li class="flex items-start gap-2">
-                                                        <span class="mt-1">→</span>
-                                                        <span>Managing Ship-To configuration decision requiring business stakeholder input and documentation</span>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Key Deliverables -->
-                    <div class="mb-10">
-                        <h4 class="text-2xl font-bold text-gray-900 mb-6 flex items-center gap-3">
-                            <span class="w-10 h-10 rounded-full bg-purple-100 flex items-center justify-center flex-shrink-0">
-                                <svg class="w-5 h-5 text-purple-600" fill="currentColor" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd" d="M6 2a2 2 0 00-2 2v12a2 2 0 002 2h8a2 2 0 002-2V7.414A2 2 0 0015.414 6L12 2.586A2 2 0 0010.586 2H6zm5 6a1 1 0 10-2 0v3.586l-1.293-1.293a1 1 0 10-1.414 1.414l3 3a1 1 0 001.414 0l3-3a1 1 0 00-1.414-1.414L11 11.586V8z" clip-rule="evenodd"/>
-                                </svg>
-                            </span>
-                            Key Deliverables & Artifacts
-                        </h4>
-                        <div class="pl-13 grid grid-cols-2 gap-4">
-                            <div class="bg-gray-50 rounded-lg p-4 border-l-4 border-blue-500">
-                                <h5 class="font-bold text-sm mb-2">Strategic Master Framework</h5>
-                                <p class="text-xs text-gray-600">DXPPO-35 parent epic covering all vendor touchpoints, integration phases, and decision log</p>
-                            </div>
-                            <div class="bg-gray-50 rounded-lg p-4 border-l-4 border-blue-500">
-                                <h5 class="font-bold text-sm mb-2">Davis-Ulmer Pilot Epic</h5>
-                                <p class="text-xs text-gray-600">DXPPO-138 customer-specific requirements, Ship-To config, and pilot testing scenarios</p>
-                            </div>
-                            <div class="bg-gray-50 rounded-lg p-4 border-l-4 border-blue-500">
-                                <h5 class="font-bold text-sm mb-2">Cart to PO Processing Documentation</h5>
-                                <p class="text-xs text-gray-600">DXPPO-171 comprehensive flow mapping, transformation logic, and error handling specifications</p>
-                            </div>
-                            <div class="bg-gray-50 rounded-lg p-4 border-l-4 border-blue-500">
-                                <h5 class="font-bold text-sm mb-2">UOM Mapping Specifications</h5>
-                                <p class="text-xs text-gray-600">Three-system unit of measure translation matrix with validation rules and edge case handling</p>
-                            </div>
-                            <div class="bg-gray-50 rounded-lg p-4 border-l-4 border-blue-500">
-                                <h5 class="font-bold text-sm mb-2">Vendor Accountability Framework</h5>
-                                <p class="text-xs text-gray-600">Email threads, decision documentation, and escalation paths for Digital Silk, Greenwing, Boomi, GEP</p>
-                            </div>
-                            <div class="bg-gray-50 rounded-lg p-4 border-l-4 border-blue-500">
-                                <h5 class="font-bold text-sm mb-2">Confluence Knowledge Base</h5>
-                                <p class="text-xs text-gray-600">Organized under Technical Documentation, Requirements, Meetings, Governance sections</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Results -->
-                    <div class="mb-10">
-                        <h4 class="text-2xl font-bold text-gray-900 mb-6 flex items-center gap-3">
-                            <span class="w-10 h-10 rounded-full bg-green-100 flex items-center justify-center flex-shrink-0">
-                                <svg class="w-5 h-5 text-green-600" fill="currentColor" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                                </svg>
-                            </span>
-                            Results & Impact
-                        </h4>
-                        <div class="pl-13 grid grid-cols-3 gap-6">
-                            <div class="result-tag rounded-lg p-6">
-                                <div class="text-3xl font-bold mb-2">95%</div>
-                                <div class="text-sm font-semibold mb-2">Timeline Recovery</div>
-                                <p class="text-xs leading-relaxed">
-                                    Despite 81-day blockage consuming 77% of timeline, on track for February 5 compliance through aggressive coordination
-                                </p>
-                            </div>
-                            <div class="result-tag rounded-lg p-6">
-                                <div class="text-3xl font-bold mb-2">100%</div>
-                                <div class="text-sm font-semibold mb-2">Vendor Accountability</div>
-                                <p class="text-xs leading-relaxed">
-                                    Established comprehensive documentation framework ensuring every vendor commitment and decision is traceable
-                                </p>
-                            </div>
-                            <div class="result-tag rounded-lg p-6">
-                                <div class="text-3xl font-bold mb-2">3-Phase</div>
-                                <div class="text-sm font-semibold mb-2">Integration Flow</div>
-                                <p class="text-xs leading-relaxed">
-                                    Successfully mapped session setup, cart return, and PO submission across five disparate systems
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Lessons Learned -->
-                    <div class="highlight-box">
-                        <h4 class="text-lg font-bold text-gray-900 mb-4 flex items-center gap-2">
-                            <svg class="w-5 h-5 text-gray-800" fill="currentColor" viewBox="0 0 20 20">
-                                <path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0zM6 18a1 1 0 001-1v-2.065a8.935 8.935 0 00-2-.712V17a1 1 0 001 1z"/>
-                            </svg>
-                            Key Learnings & Best Practices
-                        </h4>
-                        <div class="grid grid-cols-2 gap-4">
-                            <div>
-                                <h5 class="font-semibold text-sm mb-2 text-gray-900">✓ Discovery-First Methodology Validated</h5>
-                                <p class="text-xs text-gray-800 leading-relaxed">
-                                    Investing in comprehensive discovery of <span class="">Greenwing "black box"</span> and <span class="">three-phase flow</span> prevented 
-                                    costly rework. Staying in <span class="">exploration phase</span> vs. jumping to solutions proved critical for complex integrations.
-                                </p>
-                            </div>
-                            <div>
-                                <h5 class="font-semibold text-sm mb-2 text-gray-900">✓ Evidence-Based Documentation Essential</h5>
-                                <p class="text-xs text-gray-800 leading-relaxed">
-                                    <span class="">Facts-only approach</span> and <span class="">rejection of assumptions</span> created accountability framework that enabled 
-                                    81-day blockage resolution. Email threads and <span class="">Jira traceability</span> prevented vendor finger-pointing.
-                                </p>
-                            </div>
-                            <div>
-                                <h5 class="font-semibold text-sm mb-2 text-gray-900">✓ Single-Point Dependencies Are Critical Risks</h5>
-                                <p class="text-xs text-gray-800 leading-relaxed">
-                                    Dependency on <span class="">Jason Capshaw (ERP architect)</span> created project bottleneck. Future projects require 
-                                    <span class="">knowledge transfer plans</span> and backup resources for critical technical roles.
-                                </p>
-                            </div>
-                            <div>
-                                <h5 class="font-semibold text-sm mb-2 text-gray-900">✓ Test Scenarios Without User Stories Limit UAT</h5>
-                                <p class="text-xs text-gray-800 leading-relaxed">
-                                    Developing test scenarios without <span class="">formal acceptance criteria</span> limits UAT to <span class="">functional validation</span> 
-                                    vs. business requirement validation. Process improvement needed for future sprints.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
+<!-- ===================== WHERE I'M MOST USEFUL ===================== -->
+<section class="py-5" id="overview">
+    <div class="container">
+        <div class="mb-5">
+            <h2 class="fw-bold display-5 mb-3">Where I'm most useful.</h2>
+            <p class="fs-5 text-secondary">Most of my work falls into a few patterns. If you see yourself in one of these, we should talk.</p>
+        </div>
+        <div class="row g-4 mb-5">
+            <div class="col-12 col-md-6">
+                <div class="bg-white rounded-3 shadow-sm p-4 p-md-5 h-100">
+                    <h3 class="fw-bold fs-4 mb-3">Requirements & User Experience</h3>
+                    <p class="text-secondary lh-lg mb-0">
+                        When you need to transform fuzzy business needs into clear requirements, I create
+                        wireframes, map user journeys, and apply Usability Engineering principles so your team
+                        can ship experiences users actually want. From personas and scenarios to interaction flows
+                        and acceptance criteria, I bridge the gap between <em class="text-dark fw-semibold">what users need</em> and <em class="text-dark fw-semibold">what gets built</em>.
+                    </p>
                 </div>
             </div>
-
-            <!-- Case Study 3: Placeholder -->
-
-        </div>
-    </section>
-
-    <!-- Methodology -->
-    <!-- Additional Case Study: Royal Balm -->
-    <section class="bg-gradient-to-br from-orange-50 to-amber-50 py-16">
-        <div class="max-w-7xl mx-auto px-6">
-            <div class="bg-white rounded-2xl shadow-xl overflow-hidden">
-                <div class="grid grid-cols-2 gap-0">
-                    <!-- Left Side - Image -->
-                    <div class="relative h-full min-h-[600px]">
-                        <img src="/mnt/user-data/uploads/1769089979907_image.png" 
-                             alt="Slobodan Milosavljević - Royal Balm Organic" 
-                             class="absolute inset-0 w-full h-full object-cover">
-                        <!-- Fallback if image doesn't load -->
-                        <div class="absolute inset-0 bg-gradient-to-br from-blue-900 to-blue-800 hidden items-center justify-center">
-                            <div class="text-white text-center p-8">
-                                <div class="w-32 h-32 mx-auto rounded-full bg-white/20 backdrop-blur-md border-4 border-orange-500 flex items-center justify-center mb-6">
-                                    <svg viewBox="0 0 100 100" class="w-20 h-20">
-                                        <text x="50" y="72" fill="white" font-size="56" font-weight="bold" text-anchor="middle" font-family="Arial">S</text>
-                                    </svg>
-                                </div>
-                                <h3 class="text-2xl font-bold mb-2">E-Commerce Interview</h3>
-                                <p class="text-blue-100">Royal Balm Organic Case Study</p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- Right Side - Content -->
-                    <div class="p-12 flex flex-col justify-center">
-                        <div class="inline-block px-3 py-1 bg-orange-100 text-orange-800 rounded-full text-xs font-semibold mb-4 w-fit">
-                            FEATURED WORK • PERSONAL STORY
-                        </div>
-                        <h3 class="text-4xl font-bold text-gray-900 mb-4 display-font">Royal Balm Organic</h3>
-                        <p class="text-xl text-gray-600 mb-6">Serbia's First Certified Organic Cosmetics Brand</p>
-                        
-                        <!-- Emotional Story -->
-                        <div class="highlight-box mb-6">
-                            <p class="text-lg text-gray-800 leading-relaxed mb-4">
-                                <span class="font-bold text-gray-900">Sometimes life-threatening moments change your perspective.</span> After surviving a 
-                                pulmonary embolism and losing my job due to a temporary contract, I left the hospital with two things: 
-                                a passion for <span class="">natural wellness products</span> and an urgent need to work fast.
-                            </p>
-                            <p class="text-lg text-gray-800 leading-relaxed">
-                                That's when the Royal Balm Organic project became more than just another e-commerce integration—
-                                <span class="font-bold text-gray-900">it was personal, it was urgent, and it was my chance to build something meaningful.</span>
-                            </p>
-                        </div>
-                        
-                        <div class="space-y-4 mb-6">
-                            <div class="flex items-start gap-3">
-                                <div class="w-2 h-2 bg-orange-500 rounded-full mt-2 flex-shrink-0"></div>
-                                <p class="text-gray-700 leading-relaxed">
-                                    <span class="">Natural cosmetics</span> is one of the most challenging industries where 
-                                    <span class="">better user journey always wins</span>—it's the most important factor apart from marketing.
-                                </p>
-                            </div>
-                            <div class="flex items-start gap-3">
-                                <div class="w-2 h-2 bg-orange-500 rounded-full mt-2 flex-shrink-0"></div>
-                                <p class="text-gray-700 leading-relaxed">
-                                    I was involved in writing the <span class="">business case to raise funds</span>—and we succeeded. 
-                                    We became <span class="">Serbia's first certified organic cosmetics brand</span>.
-                                </p>
-                            </div>
-                            <div class="flex items-start gap-3">
-                                <div class="w-2 h-2 bg-orange-500 rounded-full mt-2 flex-shrink-0"></div>
-                                <p class="text-gray-700 leading-relaxed">
-                                    Led end-to-end <span class="">e-commerce platform implementation</span> combining 
-                                    UX design, customer journey mapping, and technical requirements—from business strategy through delivery.
-                                </p>
-                            </div>
-                            <div class="flex items-start gap-3">
-                                <div class="w-2 h-2 bg-orange-500 rounded-full mt-2 flex-shrink-0"></div>
-                                <p class="text-gray-700 leading-relaxed">
-                                    Featured in <span class="">E-Commerce Magazine interview</span> discussing digital transformation 
-                                    methodology and omnichannel strategies for organic products retail.
-                                </p>
-                            </div>
-                        </div>
-                        
-                        <!-- Results -->
-                        <div class="bg-gradient-to-r from-green-50 to-emerald-50 rounded-xl p-6 mb-6">
-                            <h4 class="font-bold text-gray-900 mb-3 flex items-center gap-2">
-                                <svg class="w-5 h-5 text-green-600" fill="currentColor" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                                </svg>
-                                Impact
-                            </h4>
-                            <div class="grid grid-cols-2 gap-4 text-sm">
-                                <div>
-                                    <span class="font-bold text-green-900">🏆 First Mover:</span>
-                                    <span class="text-gray-700"> Serbia's first certified organic cosmetics</span>
-                                </div>
-                                <div>
-                                    <span class="font-bold text-green-900">💰 Funding:</span>
-                                    <span class="text-gray-700"> Successfully raised seed capital</span>
-                                </div>
-                                <div>
-                                    <span class="font-bold text-green-900">🛒 E-commerce:</span>
-                                    <span class="text-gray-700"> Full omnichannel platform launched</span>
-                                </div>
-                                <div>
-                                    <span class="font-bold text-green-900">📈 Growth:</span>
-                                    <span class="text-gray-700"> Sustainable business model established</span>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="flex gap-4 items-center">
-                            <a href="https://www.royalbalm.rs" target="_blank" rel="noopener" 
-                               class="text-blue-600 hover:text-blue-800 font-semibold flex items-center gap-2 transition-colors">
-                                Visit Website
-                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
-                                </svg>
-                            </a>
-                            <span class="text-gray-300">|</span>
-                            <span class="text-sm text-gray-500">www.royalbalm.rs</span>
-                        </div>
-                    </div>
+            <div class="col-12 col-md-6">
+                <div class="bg-white rounded-3 shadow-sm p-4 p-md-5 h-100">
+                    <h3 class="fw-bold fs-4 mb-3">Business Process Optimization</h3>
+                    <p class="text-secondary lh-lg mb-0">
+                        When your processes are unclear or inefficient, I document and redesign them using
+                        BPMN diagrams and process modeling. I analyze current state workflows, identify bottlenecks
+                        and gaps, then design future state processes that align with business objectives and system
+                        capabilities. The result: <em class="text-dark fw-semibold">visual clarity</em> that gets stakeholders aligned and <em class="text-dark fw-semibold">systematic improvements</em> that deliver measurable results.
+                    </p>
+                </div>
+            </div>
+            <div class="col-12 col-md-6">
+                <div class="bg-white rounded-3 shadow-sm p-4 p-md-5 h-100">
+                    <h3 class="fw-bold fs-4 mb-3">Integration & Data Mapping</h3>
+                    <p class="text-secondary lh-lg mb-0">
+                        When you're connecting ERP systems, e-commerce platforms, and multi-vendor ecosystems,
+                        I map data flows, define transformation rules, and document integration touchpoints.
+                        From cXML payloads to API specifications, I ensure your systems speak the same language
+                        and data moves <em class="text-dark fw-semibold">accurately</em> and <em class="text-dark fw-semibold">reliably</em> across boundaries.
+                    </p>
+                </div>
+            </div>
+            <div class="col-12 col-md-6">
+                <div class="bg-white rounded-3 shadow-sm p-4 p-md-5 h-100">
+                    <h3 class="fw-bold fs-4 mb-3">Discovery & Documentation</h3>
+                    <p class="text-secondary lh-lg mb-0">
+                        When your project has scattered information and unclear scope, I conduct structured
+                        discovery through workshops, interviews, and analysis. I create comprehensive documentation
+                        frameworks in Confluence and Jira that provide traceability from
+                        <em class="text-dark fw-semibold">business objectives</em> through <em class="text-dark fw-semibold">technical implementation</em>.
+                        My documentation becomes the single source of truth that keeps complex projects on track.
+                    </p>
                 </div>
             </div>
         </div>
-    </section>
 
-  
-    <!-- CTA Banner -->
-    <section class="bg-gradient-to-br from-blue-900 via-blue-800 to-blue-900 text-white py-16">
-        <div class="max-w-4xl mx-auto px-6 text-center">
-            <h3 class="text-4xl font-bold mb-4 display-font">Ready to Transform Your Project?</h3>
-            <p class="text-xl text-blue-100 mb-8">
-                Let's discuss how BABOK v3 methodology and evidence-based analysis can deliver results.
+        <!-- Creative Documentation -->
+        <div class="bg-white rounded-3 shadow-sm p-4 p-md-5">
+            <h3 class="fw-bold fs-4 text-center mb-3">My Creative Documentation</h3>
+            <p class="text-secondary text-center mb-5 mx-auto" style="max-width:600px;">
+                I believe good requirements aren't just written—they're visualized.
+                Here's where my creativity meets systematic analysis.
             </p>
-            <div class="flex gap-6 justify-center">
-                <a href="#contact" class="px-8 py-4 bg-orange-500 text-white rounded-lg font-semibold text-lg hover:bg-orange-600 transition-colors shadow-lg">
-                    Get In Touch
-                </a>
-                <a href="#case-studies" class="px-8 py-4 bg-white/20 text-white rounded-lg font-semibold text-lg hover:bg-white/30 transition-colors backdrop-blur-sm">
-                    View Case Studies
-                </a>
+            <div class="row g-4">
+                <div class="col-12 col-md-4">
+                    <div class="rounded-3 p-4 text-center h-100 d-flex flex-column align-items-center justify-content-center" style="min-height:260px;background:linear-gradient(135deg,#eff6ff,#eef2ff);border:2px dashed #93c5fd;">
+                        <div class="rounded-circle d-flex align-items-center justify-content-center mb-3" style="width:64px;height:64px;background:#dbeafe;">
+                            <svg width="32" height="32" fill="none" stroke="#2563eb" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
+                        </div>
+                        <h4 class="fw-bold fs-6 mb-2">BPMN Diagrams</h4>
+                        <p class="text-secondary small mb-3">Process flows &amp; workflows</p>
+                        <span class="text-muted fst-italic small">📊 Add your BPMN example</span>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="rounded-3 p-4 text-center h-100 d-flex flex-column align-items-center justify-content-center" style="min-height:260px;background:linear-gradient(135deg,#f0fdf4,#ecfdf5);border:2px dashed #86efac;">
+                        <div class="rounded-circle d-flex align-items-center justify-content-center mb-3" style="width:64px;height:64px;background:#dcfce7;">
+                            <svg width="32" height="32" fill="none" stroke="#16a34a" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z"/></svg>
+                        </div>
+                        <h4 class="fw-bold fs-6 mb-2">UX Wireframes</h4>
+                        <p class="text-secondary small mb-3">User interface mockups</p>
+                        <span class="text-muted fst-italic small">🎨 Add your wireframe example</span>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="rounded-3 p-4 text-center h-100 d-flex flex-column align-items-center justify-content-center" style="min-height:260px;background:linear-gradient(135deg,#faf5ff,#f5f3ff);border:2px dashed #c4b5fd;">
+                        <div class="rounded-circle d-flex align-items-center justify-content-center mb-3" style="width:64px;height:64px;background:#f3e8ff;">
+                            <svg width="32" height="32" fill="none" stroke="#9333ea" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/></svg>
+                        </div>
+                        <h4 class="fw-bold fs-6 mb-2">User Journey Maps</h4>
+                        <p class="text-secondary small mb-3">Experience flows &amp; touchpoints</p>
+                        <span class="text-muted fst-italic small">🗺️ Add your journey map example</span>
+                    </div>
+                </div>
             </div>
-            
-            <!-- Social Media Icons -->
-            <div class="mt-10 pt-8 border-t border-white/20">
-                <div class="flex items-center justify-center gap-4">
-                    <a href="/cdn-cgi/l/email-protection#90f3fffee4f1f3e4d0f5e8f1fde0fcf5bef3fffd" class="w-12 h-12 rounded-full bg-blue-600 flex items-center justify-center hover:bg-blue-700 transition-colors">
-                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
-                        </svg>
-                    </a>
-                    <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener" class="w-12 h-12 rounded-full bg-blue-600 flex items-center justify-center hover:bg-blue-700 transition-colors">
-                        <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
-                        </svg>
-                    </a>
-                    <a href="tel:+1234567890" class="w-12 h-12 rounded-full bg-blue-600 flex items-center justify-center hover:bg-blue-700 transition-colors">
-                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
-                        </svg>
-                    </a>
+            <div class="mt-5 pt-4 border-top text-center">
+                <p class="text-secondary fst-italic mb-0">
+                    "I don't just write requirements—I visualize systems, design experiences, and document processes that bring clarity to complexity."
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- ===================== CASE STUDIES ===================== -->
+<section id="case-studies" class="py-5" style="background:#f9fafb;">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="fw-bold display-5 mb-3 display-font">Case Studies</h2>
+            <p class="fs-5 text-secondary mx-auto" style="max-width:700px;">
+                Deep-dive analyses of complex projects demonstrating problem-solving, stakeholder management,
+                and delivery excellence in enterprise environments.
+            </p>
+        </div>
+
+        <!-- Case Study 1 -->
+        <div class="case-study-card bg-white rounded-3 shadow-sm mb-5 p-4 p-lg-5 position-relative">
+            <div class="section-number">01</div>
+
+            <!-- Header -->
+            <div class="row align-items-start mb-4">
+                <div class="col-12 col-sm-8">
+                    <span class="badge rounded-pill px-3 py-2 mb-2" style="background:#ffedd5;color:#9a3412;font-size:.75rem;">ACTIVE PROJECT</span>
+                    <h3 class="fw-bold display-font mb-2" style="font-size:2rem;">ADI PunchOut MVP</h3>
+                    <p class="fs-5 text-secondary mb-0">B2B Procurement Integration for National Accounts</p>
+                </div>
+                <div class="col-12 col-sm-4 mt-3 mt-sm-0 text-sm-end">
+                    <div class="text-muted small">Duration</div>
+                    <div class="fw-semibold">6 months</div>
+                    <div class="text-muted small mt-2">Budget</div>
+                    <div class="fw-semibold">$2.5M+</div>
+                </div>
+            </div>
+
+            <!-- Executive Summary -->
+            <div class="highlight-box mb-4">
+                <h4 class="fw-bold fs-6 mb-3 d-flex align-items-center gap-2">
+                    <svg width="20" height="20" fill="currentColor" viewBox="0 0 20 20"><path d="M9 2a1 1 0 000 2h2a1 1 0 100-2H9z"/><path fill-rule="evenodd" d="M4 5a2 2 0 012-2 3 3 0 003 3h2a3 3 0 003-3 2 2 0 012 2v11a2 2 0 01-2 2H6a2 2 0 01-2-2V5zm3 4a1 1 0 000 2h.01a1 1 0 100-2H7zm3 0a1 1 0 000 2h3a1 1 0 100-2h-3zm-3 4a1 1 0 100 2h.01a1 1 0 100-2H7zm3 0a1 1 0 100 2h3a1 1 0 100-2h-3z" clip-rule="evenodd"/></svg>
+                    Executive Summary
+                </h4>
+                <p class="highlight-box-text mb-0">
+                    Led critical B2B e-commerce integration connecting APi Group's enterprise procurement system (GEP)
+                    with ADI Global Distribution's product catalog through BigCommerce and P21 ERP. Managed complex
+                    multi-vendor coordination involving Digital Silk, Greenwing Technology, Boomi, and GEP with strict
+                    February 2026 compliance deadline. Project represents ADI's strategic entry into automated B2B
+                    ordering systems for National account segment.
+                </p>
+            </div>
+
+            <!-- Business Challenge -->
+            <div class="mb-4">
+                <h4 class="fw-bold fs-5 mb-4 d-flex align-items-center gap-3">
+                    <span class="rounded-circle d-flex align-items-center justify-content-center flex-shrink-0" style="width:40px;height:40px;background:#fee2e2;">
+                        <svg width="20" height="20" fill="#dc2626" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd"/></svg>
+                    </span>
+                    Business Challenge
+                </h4>
+                <div class="row g-3">
+                    <div class="col-12 col-md-6"><div class="challenge-tag rounded-3 p-3 h-100"><h5 class="fw-bold small mb-2">⚠️ Integration Complexity</h5><p class="small lh-lg mb-0">Three-phase PunchOut flow (session setup, cart return, PO submission) across five disparate systems with no existing integration patterns. Greenwing middleware functioning as "black box" with minimal documentation.</p></div></div>
+                    <div class="col-12 col-md-6"><div class="challenge-tag rounded-3 p-3 h-100"><h5 class="fw-bold small mb-2">⏰ Aggressive Timeline</h5><p class="small lh-lg mb-0">February 5, 2026 compliance deadline with April 1, 2026 go-live target. 81-day blockage on PO integration consumed 77% of project timeline, requiring aggressive risk mitigation.</p></div></div>
+                    <div class="col-12 col-md-6"><div class="challenge-tag rounded-3 p-3 h-100"><h5 class="fw-bold small mb-2">🔄 Multi-Vendor Coordination</h5><p class="small lh-lg mb-0">Four external vendors (Digital Silk, Greenwing, Boomi, GEP) with competing priorities, unclear ownership boundaries, and dependency bottlenecks requiring explicit accountability frameworks.</p></div></div>
+                    <div class="col-12 col-md-6"><div class="challenge-tag rounded-3 p-3 h-100"><h5 class="fw-bold small mb-2">🔒 Security Vulnerabilities</h5><p class="small lh-lg mb-0">PO interface security issues and order queue behavior problems in P21 ERP requiring ERP architect intervention. Critical dependency on single resource (Jason Capshaw) for resolution.</p></div></div>
+                </div>
+            </div>
+
+            <!-- Approach & Solutions -->
+            <div class="mb-4">
+                <h4 class="fw-bold fs-5 mb-4 d-flex align-items-center gap-3">
+                    <span class="rounded-circle d-flex align-items-center justify-content-center flex-shrink-0" style="width:40px;height:40px;background:#dbeafe;">
+                        <svg width="20" height="20" fill="#2563eb" viewBox="0 0 20 20"><path d="M11 3a1 1 0 10-2 0v1a1 1 0 102 0V3zM15.657 5.757a1 1 0 00-1.414-1.414l-.707.707a1 1 0 001.414 1.414l.707-.707zM18 10a1 1 0 01-1 1h-1a1 1 0 110-2h1a1 1 0 011 1zM5.05 6.464A1 1 0 106.464 5.05l-.707-.707a1 1 0 00-1.414 1.414l.707.707zM5 10a1 1 0 01-1 1H3a1 1 0 110-2h1a1 1 0 011 1zM8 16v-1h4v1a2 2 0 11-4 0zM12 14c.015-.34.208-.646.477-.859a4 4 0 10-4.954 0c.27.213.462.519.476.859h4.002z"/></svg>
+                    </span>
+                    Approach &amp; Solutions
+                </h4>
+                <div class="row g-3">
+                    <div class="col-12">
+                        <div class="solution-tag rounded-3 p-3">
+                            <div class="d-flex justify-content-between align-items-start flex-wrap gap-2 mb-2">
+                                <h5 class="fw-bold small mb-0">Phase 1: Discovery &amp; Requirements Engineering</h5>
+                                <span class="badge bg-white text-dark rounded-pill">Months 1-2</span>
+                            </div>
+                            <ul class="small lh-lg mb-0 ps-3">
+                                <li>Developed comprehensive UOM mapping specifications across P21, BigCommerce, and GEP systems through iterative stakeholder workshops</li>
+                                <li>Created strategic master framework (DXPPO-35) establishing traceability for all vendor integration points and decision documentation</li>
+                                <li>Identified "black box" transformation logic in Greenwing middleware as critical knowledge gap requiring discovery investment</li>
+                                <li>Established facts-only documentation standard rejecting assumptions without evidence across all vendor communications</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="solution-tag rounded-3 p-3">
+                            <div class="d-flex justify-content-between align-items-start flex-wrap gap-2 mb-2">
+                                <h5 class="fw-bold small mb-0">Phase 2: Multi-Vendor Coordination &amp; Unblocking</h5>
+                                <span class="badge bg-white text-dark rounded-pill">Months 3-5</span>
+                            </div>
+                            <ul class="small lh-lg mb-0 ps-3">
+                                <li>Coordinated resolution of 81-day PO integration blockage through persistent escalation and evidence-based advocacy for ERP architect engagement</li>
+                                <li>Unblocked cart return functionality (January 15, 2026) by working with Digital Silk to implement hidden div solution for cart ID retrieval</li>
+                                <li>Completed UOM mapping across three systems after three months of iterative refinement and validation cycles</li>
+                                <li>Maintained comprehensive email threads and Jira documentation (DXPPO-138, DXPPO-171) ensuring vendor accountability and decision traceability</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="solution-tag rounded-3 p-3">
+                            <div class="d-flex justify-content-between align-items-start flex-wrap gap-2 mb-2">
+                                <h5 class="fw-bold small mb-0">Phase 3: Testing &amp; Go-Live Preparation</h5>
+                                <span class="badge bg-white text-dark rounded-pill">Month 6+</span>
+                            </div>
+                            <ul class="small lh-lg mb-0 ps-3">
+                                <li>Coordinating UAT with Davis-Ulmer Sprinkler Company (pilot customer) requiring clarification of PM vs. BA ownership boundaries</li>
+                                <li>Waiting on Jason Capshaw (ERP architect) return February 5 to finalize PO interface and order queue behavior resolution</li>
+                                <li>Structuring ASN (Advanced Shipping Notice) discovery work under DXPPO-61 for post-MVP implementation phase</li>
+                                <li>Managing Ship-To configuration decision requiring business stakeholder input and documentation</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Key Deliverables -->
+            <div class="mb-4">
+                <h4 class="fw-bold fs-5 mb-4 d-flex align-items-center gap-3">
+                    <span class="rounded-circle d-flex align-items-center justify-content-center flex-shrink-0" style="width:40px;height:40px;background:#f3e8ff;">
+                        <svg width="20" height="20" fill="#9333ea" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M6 2a2 2 0 00-2 2v12a2 2 0 002 2h8a2 2 0 002-2V7.414A2 2 0 0015.414 6L12 2.586A2 2 0 0010.586 2H6zm5 6a1 1 0 10-2 0v3.586l-1.293-1.293a1 1 0 10-1.414 1.414l3 3a1 1 0 001.414 0l3-3a1 1 0 00-1.414-1.414L11 11.586V8z" clip-rule="evenodd"/></svg>
+                    </span>
+                    Key Deliverables &amp; Artifacts
+                </h4>
+                <div class="row g-3">
+                    <div class="col-12 col-md-6"><div class="bg-light rounded-3 p-3 border-start border-4 border-primary h-100"><h5 class="fw-bold small mb-1">Strategic Master Framework</h5><p class="text-muted small mb-0">DXPPO-35 parent epic covering all vendor touchpoints, integration phases, and decision log</p></div></div>
+                    <div class="col-12 col-md-6"><div class="bg-light rounded-3 p-3 border-start border-4 border-primary h-100"><h5 class="fw-bold small mb-1">Davis-Ulmer Pilot Epic</h5><p class="text-muted small mb-0">DXPPO-138 customer-specific requirements, Ship-To config, and pilot testing scenarios</p></div></div>
+                    <div class="col-12 col-md-6"><div class="bg-light rounded-3 p-3 border-start border-4 border-primary h-100"><h5 class="fw-bold small mb-1">Cart to PO Processing Documentation</h5><p class="text-muted small mb-0">DXPPO-171 comprehensive flow mapping, transformation logic, and error handling specifications</p></div></div>
+                    <div class="col-12 col-md-6"><div class="bg-light rounded-3 p-3 border-start border-4 border-primary h-100"><h5 class="fw-bold small mb-1">UOM Mapping Specifications</h5><p class="text-muted small mb-0">Three-system unit of measure translation matrix with validation rules and edge case handling</p></div></div>
+                    <div class="col-12 col-md-6"><div class="bg-light rounded-3 p-3 border-start border-4 border-primary h-100"><h5 class="fw-bold small mb-1">Vendor Accountability Framework</h5><p class="text-muted small mb-0">Email threads, decision documentation, and escalation paths for Digital Silk, Greenwing, Boomi, GEP</p></div></div>
+                    <div class="col-12 col-md-6"><div class="bg-light rounded-3 p-3 border-start border-4 border-primary h-100"><h5 class="fw-bold small mb-1">Confluence Knowledge Base</h5><p class="text-muted small mb-0">Organized under Technical Documentation, Requirements, Meetings, Governance sections</p></div></div>
+                </div>
+            </div>
+
+            <!-- Results -->
+            <div class="mb-4">
+                <h4 class="fw-bold fs-5 mb-4 d-flex align-items-center gap-3">
+                    <span class="rounded-circle d-flex align-items-center justify-content-center flex-shrink-0" style="width:40px;height:40px;background:#dcfce7;">
+                        <svg width="20" height="20" fill="#16a34a" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                    </span>
+                    Results &amp; Impact
+                </h4>
+                <div class="row g-3">
+                    <div class="col-12 col-md-4"><div class="result-tag rounded-3 p-3 h-100"><div class="fw-bold mb-1" style="font-size:1.75rem;">95%</div><div class="fw-semibold small mb-2">Timeline Recovery</div><p class="small lh-lg mb-0">Despite 81-day blockage consuming 77% of timeline, on track for February 5 compliance through aggressive coordination</p></div></div>
+                    <div class="col-12 col-md-4"><div class="result-tag rounded-3 p-3 h-100"><div class="fw-bold mb-1" style="font-size:1.75rem;">100%</div><div class="fw-semibold small mb-2">Vendor Accountability</div><p class="small lh-lg mb-0">Established comprehensive documentation framework ensuring every vendor commitment and decision is traceable</p></div></div>
+                    <div class="col-12 col-md-4"><div class="result-tag rounded-3 p-3 h-100"><div class="fw-bold mb-1" style="font-size:1.75rem;">3-Phase</div><div class="fw-semibold small mb-2">Integration Flow</div><p class="small lh-lg mb-0">Successfully mapped session setup, cart return, and PO submission across five disparate systems</p></div></div>
+                </div>
+            </div>
+
+            <!-- Lessons Learned -->
+            <div class="highlight-box">
+                <h4 class="fw-bold fs-6 mb-3 d-flex align-items-center gap-2">
+                    <svg width="20" height="20" fill="currentColor" viewBox="0 0 20 20"><path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762z"/></svg>
+                    Key Learnings &amp; Best Practices
+                </h4>
+                <div class="row g-3">
+                    <div class="col-12 col-md-6"><h5 class="fw-semibold small mb-1">✓ Discovery-First Methodology Validated</h5><p class="small lh-lg mb-0">Investing in comprehensive discovery of Greenwing "black box" and three-phase flow prevented costly rework. Staying in exploration phase vs. jumping to solutions proved critical for complex integrations.</p></div>
+                    <div class="col-12 col-md-6"><h5 class="fw-semibold small mb-1">✓ Evidence-Based Documentation Essential</h5><p class="small lh-lg mb-0">Facts-only approach and rejection of assumptions created accountability framework that enabled 81-day blockage resolution. Email threads and Jira traceability prevented vendor finger-pointing.</p></div>
+                    <div class="col-12 col-md-6"><h5 class="fw-semibold small mb-1">✓ Single-Point Dependencies Are Critical Risks</h5><p class="small lh-lg mb-0">Dependency on Jason Capshaw (ERP architect) created project bottleneck. Future projects require knowledge transfer plans and backup resources for critical technical roles.</p></div>
+                    <div class="col-12 col-md-6"><h5 class="fw-semibold small mb-1">✓ Test Scenarios Without User Stories Limit UAT</h5><p class="small lh-lg mb-0">Developing test scenarios without formal acceptance criteria limits UAT to functional validation vs. business requirement validation. Process improvement needed for future sprints.</p></div>
                 </div>
             </div>
         </div>
-    </section>
-    </section>
+    </div>
+</section>
 
-    <!-- Footer -->
-    <footer class="bg-gray-900 text-gray-400 py-8">
-        <div class="max-w-7xl mx-auto px-6 text-center text-sm">
-            <p>© 2026 Slobodan Milosavljević | Senior Business Analyst & Product Owner</p>
+<!-- ===================== ROYAL BALM ===================== -->
+<section class="py-5" style="background:linear-gradient(135deg,#fff7ed,#fffbeb);">
+    <div class="container">
+        <div class="bg-white rounded-4 shadow overflow-hidden">
+            <div class="row g-0">
+                <div class="col-12 col-lg-5 position-relative" style="min-height:420px;">
+                    <img src="assets/images/main/royal-balm.jpg"
+                         alt="Royal Balm Organic"
+                         class="position-absolute top-0 start-0 w-100 h-100" style="object-fit:cover;">
+                </div>
+                <div class="col-12 col-lg-7 p-4 p-lg-5 d-flex flex-column justify-content-center">
+                    <span class="badge rounded-pill px-3 py-2 mb-3 d-inline-block" style="background:#ffedd5;color:#9a3412;width:fit-content;">FEATURED WORK • PERSONAL STORY</span>
+                    <h3 class="fw-bold display-font mb-2" style="font-size:2rem;">Royal Balm Organic</h3>
+                    <p class="fs-5 text-secondary mb-4">Serbia's First Certified Organic Cosmetics Brand</p>
+
+                    <div class="highlight-box mb-4">
+                        <p class="highlight-box-text mb-2">
+                            <strong>Sometimes life-threatening moments change your perspective.</strong> After surviving a
+                            pulmonary embolism and losing my job due to a temporary contract, I left the hospital with two things:
+                            a passion for natural wellness products and an urgent need to work fast.
+                        </p>
+                        <p class="highlight-box-text mb-0">
+                            That's when the Royal Balm Organic project became more than just another e-commerce integration—
+                            <strong>it was personal, it was urgent, and it was my chance to build something meaningful.</strong>
+                        </p>
+                    </div>
+
+                    <ul class="list-unstyled mb-4">
+                        <li class="d-flex align-items-start gap-2 mb-3"><span class="rounded-circle mt-2 flex-shrink-0" style="width:8px;height:8px;min-width:8px;background:#f97316;"></span><p class="text-secondary lh-lg mb-0">Natural cosmetics is one of the most challenging industries where better user journey always wins—it's the most important factor apart from marketing.</p></li>
+                        <li class="d-flex align-items-start gap-2 mb-3"><span class="rounded-circle mt-2 flex-shrink-0" style="width:8px;height:8px;min-width:8px;background:#f97316;"></span><p class="text-secondary lh-lg mb-0">I was involved in writing the business case to raise funds—and we succeeded. We became Serbia's first certified organic cosmetics brand.</p></li>
+                        <li class="d-flex align-items-start gap-2 mb-3"><span class="rounded-circle mt-2 flex-shrink-0" style="width:8px;height:8px;min-width:8px;background:#f97316;"></span><p class="text-secondary lh-lg mb-0">Led end-to-end e-commerce platform implementation combining UX design, customer journey mapping, and technical requirements—from business strategy through delivery.</p></li>
+                        <li class="d-flex align-items-start gap-2"><span class="rounded-circle mt-2 flex-shrink-0" style="width:8px;height:8px;min-width:8px;background:#f97316;"></span><p class="text-secondary lh-lg mb-0">Featured in E-Commerce Magazine interview discussing digital transformation methodology and omnichannel strategies for organic products retail.</p></li>
+                    </ul>
+
+                    <div class="rounded-3 p-3 mb-4" style="background:linear-gradient(135deg,#f0fdf4,#ecfdf5);">
+                        <h4 class="fw-bold small mb-3">
+                            <svg width="18" height="18" fill="#16a34a" viewBox="0 0 20 20" class="me-1"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                            Impact
+                        </h4>
+                        <div class="row g-2 small">
+                            <div class="col-6"><strong class="text-success">🏆 First Mover:</strong> <span class="text-secondary">Serbia's first certified organic cosmetics</span></div>
+                            <div class="col-6"><strong class="text-success">💰 Funding:</strong> <span class="text-secondary">Successfully raised seed capital</span></div>
+                            <div class="col-6"><strong class="text-success">🛒 E-commerce:</strong> <span class="text-secondary">Full omnichannel platform launched</span></div>
+                            <div class="col-6"><strong class="text-success">📈 Growth:</strong> <span class="text-secondary">Sustainable business model established</span></div>
+                        </div>
+                    </div>
+
+                    <div class="d-flex align-items-center gap-3">
+                        <a href="https://www.royalbalm.rs" target="_blank" rel="noopener" class="fw-semibold text-primary text-decoration-none d-flex align-items-center gap-1">
+                            Visit Website
+                            <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+                        </a>
+                        <span class="text-muted">|</span>
+                        <span class="text-muted small">www.royalbalm.rs</span>
+                    </div>
+                </div>
+            </div>
         </div>
-    </footer>
+    </div>
+</section>
 
-    <!-- Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    
-    <!-- Custom Scripts -->
-    <script>
-        // Sticky Navigation on Scroll
-        window.addEventListener('scroll', function() {
-            const nav = document.querySelector('.main-nav');
-            if (nav) {
-                if (window.scrollY > 50) {
-                    nav.classList.add('scrolled');
-                } else {
-                    nav.classList.remove('scrolled');
+<!-- ===================== CTA ===================== -->
+<section id="contact" class="py-5" style="background:linear-gradient(135deg,#1e3a5f,#2d5986);">
+    <div class="container">
+        <div class="row justify-content-center text-center">
+            <div class="col-12 col-lg-8 text-white">
+                <h3 class="fw-bold display-font mb-3" style="font-size:2rem;">Ready to Transform Your Project?</h3>
+                <p class="fs-5 mb-4" style="color:#bfdbfe;">Let's discuss how BABOK v3 methodology and evidence-based analysis can deliver results.</p>
+                <div class="d-flex gap-3 justify-content-center flex-wrap mb-5">
+                    <a href="mailto:your@email.com" class="btn btn-lg px-4 py-3 fw-semibold" style="background:#f97316;color:#fff;border:none;">Get In Touch</a>
+                    <a href="#case-studies" class="btn btn-lg px-4 py-3 fw-semibold" style="background:rgba(255,255,255,.15);color:#fff;border:none;">View Case Studies</a>
+                </div>
+                <div class="pt-4 border-top" style="border-color:rgba(255,255,255,.2) !important;">
+                    <div class="d-flex justify-content-center gap-3">
+                        <a href="mailto:your@email.com" class="rounded-circle d-flex align-items-center justify-content-center" style="width:48px;height:48px;background:#2563eb;">
+                            <svg width="22" height="22" fill="none" stroke="#fff" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                        </a>
+                        <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener" class="rounded-circle d-flex align-items-center justify-content-center" style="width:48px;height:48px;background:#2563eb;">
+                            <svg width="22" height="22" fill="#fff" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                        </a>
+                        <a href="tel:+1234567890" class="rounded-circle d-flex align-items-center justify-content-center" style="width:48px;height:48px;background:#2563eb;">
+                            <svg width="22" height="22" fill="none" stroke="#fff" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="py-4" style="background:#111827;">
+    <div class="container text-center">
+        <p class="text-secondary small mb-0">© 2026 Slobodan Milosavljević | Senior Business Analyst &amp; Product Owner</p>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    window.addEventListener('scroll', function() {
+        document.querySelector('.main-nav')?.classList.toggle('scrolled', window.scrollY > 50);
+    });
+    document.addEventListener('DOMContentLoaded', function() {
+        const navbarCollapse = document.getElementById('navbarNav');
+        document.querySelectorAll('.navbar-nav .nav-link').forEach(link => {
+            link.addEventListener('click', function() {
+                if (navbarCollapse.classList.contains('show')) {
+                    new bootstrap.Collapse(navbarCollapse).hide();
                 }
-            }
-        });
-        
-        // Auto-close navbar on link click (mobile)
-        document.addEventListener('DOMContentLoaded', function() {
-            const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
-            const navbarCollapse = document.getElementById('navbarNav');
-            
-            navLinks.forEach(link => {
-                link.addEventListener('click', function() {
-                    if (navbarCollapse.classList.contains('show')) {
-                        const bsCollapse = new bootstrap.Collapse(navbarCollapse);
-                        bsCollapse.hide();
-                    }
-                });
             });
         });
-    </script>
-
+    });
+</script>
 </body>
 </html>

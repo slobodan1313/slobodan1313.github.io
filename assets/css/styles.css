@@ -20,7 +20,7 @@
 }
 .masthead-content{display:flex;justify-content:center}
 .masthead-text-center{text-align:center}
-.hero-title{margin:0 auto;font-family:'Playfair Display',serif;font-size:4.5rem;line-height:4.5rem;letter-spacing:.8rem;color:#fff;text-transform:uppercase;font-weight:700}
+.hero-title{margin:0 auto;font-size:4.5rem;line-height:4.5rem;letter-spacing:.8rem;color:#fff;text-transform:uppercase;font-weight:700}
 .hero-subtitle{margin:2rem auto 3rem;color:#fffc;font-size:1.5rem;max-width:50rem}
 .hero-buttons{margin-top:3rem}
 .btn-primary-custom{display:inline-block;padding:1rem 2rem;background-color:#f97316;color:#fff;text-decoration:none;border-radius:.5rem;font-weight:600;margin-right:1rem}
@@ -43,3 +43,6 @@
 @media (min-width: 1024px) {
 .mountain-info p{font-size:1.125rem}
 }
+.navbar-toggler-icon{display:inline-block;width:1.5em;height:1.5em;background-repeat:no-repeat;background-position:center;background-size:100%;background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255%2C255%2C255%2C1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")!important}
+.navbar-toggler{border:2px solid rgba(255,255,255,0.7)!important;padding:.5rem .75rem!important;border-radius:6px!important;background-color:transparent!important}
+.navbar-toggler:focus{outline:none;box-shadow:none!important}
